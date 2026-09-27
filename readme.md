@@ -1,90 +1,81 @@
-# Animal Detection Model
+# Animal Detection & Driver Alert System (ADAS)
 
-Detection engine for the AI-Based Animal Detection & Driver Alert System.
-This module takes video input and outputs, per frame, the list of animals
-detected (class, confidence, bounding box, screen position, and a distance
-proxy)  ready for **Person 2 (Risk Logic)** to consume directly.
+Real-time Edge Vision, Risk-Aware Road Threat Assessment & Driver Safety Analytics Dashboard.
 
-## What this module does
-- Loads a pretrained **YOLOv8** model (trained on COCO no training required)
-- Filters detections down to real-world road animal classes: `cow`, `horse`,
-  `sheep`, `dog`, `cat`, `bird`, `elephant`, `bear`, `zebra`, `giraffe`
-- Applies **CLAHE low-light enhancement** automatically on dark frames
-  (night driving conditions)
-- Computes, per detection:
-  - horizontal **zone**: `LEFT` / `CENTER` / `RIGHT`
-  - **area_fraction**: how much of the frame the bounding box occupies
-    (used as a rough distance proxy — bigger = closer)
-- Outputs:
-  - an annotated video with bounding boxes drawn
-  - a `detections.json` file with a full per-frame log
+## Key Features
 
-## Folder structure
+1. **Animal Detection Engine (YOLOv8)**:
+   - Recognizes road animals (Deer, Cattle, Dog, Horse, Sheep, Cat, Tiger, Lion, Leopard, etc.).
+   - Adaptive **MSRCR** and **CLAHE** low-light enhancement for dark night driving conditions.
+   - Computes horizontal zone (`LEFT` / `CENTER` / `RIGHT`) and area fraction as a collision proximity proxy.
+
+2. **Risk Assessment & Voice Alerts**:
+   - Risk classification: `LOW` (Green), `MEDIUM` (Amber), `HIGH` (Red).
+   - Priority handling for Center road corridor incursions.
+   - Audible driver warnings and text-to-speech voice alerts.
+
+3. **Streamlit Live Demo Interface**:
+   - Video playback with real-time bounding box overlay color-coded by risk.
+   - Dynamic **Driver Alert HUD**:
+     - 🔴 **HIGH RISK ALERT**: Danger warnings when animals are in the path or close.
+     - 🟡 **MEDIUM RISK CAUTION**: Caution warnings for roadside animals.
+     - 🟢 **LOW RISK / CLEAR**: Road corridor safe.
+   - 3-Zone Road Corridor Indicator (`LEFT` | `CENTER` | `RIGHT`).
+   - Interactive playback controls: Play/Pause, Timeline Scrubber slider, Playback speed (0.5x - 2.0x), and Live YOLOv8 inference mode.
+   - In-browser audible alert chimes.
+
+4. **BI-Style Analytics Panel**:
+   - **Detections per Session**: Aggregate metrics and interactive incident timelines across drive sessions.
+   - **Risk-Level Distribution**: Donut charts, stacked species breakdown, and corridor zone hazard charts.
+   - **Day vs. Night Comparison**: Side-by-side KPI cards, species detection comparison across daylight vs night, and risk severity shift analysis.
+   - **Data Export**: Filter and export incident logs to CSV or JSON.
+
+---
+
+## Folder Structure
+
 ```
-animal-detection-model/
-├── main.py                     # entry point — run detection on a video
-├── requirements.txt
+Animal-Detection-Driver-Alert-System-/
+├── app.py                      # Streamlit Live Demo & BI Analytics Dashboard
+├── main.py                     # Video detection batch processing script
+├── risk_logic.py               # Risk analyzer & alert generator engine
+├── requirements.txt            # System dependencies
 ├── src/
-│   ├── config.py                # thresholds, class list, zone boundaries
-│   ├── detector.py               # AnimalDetector class (YOLOv8 wrapper)
-│   ├── preprocess.py             # CLAHE low-light enhancement
-│   └── utils.py                  # drawing + geometry helper functions
-├── tests/
-│   └── make_synthetic_video.py   # generates a dummy video to sanity-check the pipeline
-├── data/
-│   └── raw_videos/               # put your test/demo footage here (not tracked by git)
-└── output/                       # annotated video + detections.json land here
+│   ├── config.py               # Thresholds, class lists, zone boundaries
+│   ├── detector.py             # AnimalDetector (YOLOv8 wrapper)
+│   ├── preprocess.py           # CLAHE & MSRCR low-light enhancement
+│   ├── tracker.py              # Temporal smoothing for presence events
+│   ├── utils.py                # Drawing, geometry, and risk evaluation helpers
+│   └── analytics.py            # BI analytics engine and multi-session store
+├── data/                       # Test and demo video footage (.mp4)
+└── output/                     # Annotated videos, JSON logs, and session databases
 ```
 
-## Setup
+---
+
+## Setup & Running the Dashboard
+
+### 1. Install Dependencies
 ```bash
 pip install -r requirements.txt
 ```
-(First run will auto-download `yolov8n.pt`, ~6MB — this is expected.)
 
-## Quick pipeline check (no real footage needed)
-Before you have real road footage, confirm the whole pipeline runs without errors:
+### 2. Launch the Streamlit App
 ```bash
-python tests/make_synthetic_video.py
-python main.py --video data/raw_videos/synthetic_test.mp4
+streamlit run app.py
 ```
-This won't produce real detections (it's just a moving rectangle, not an
-actual animal) — it only proves the code path works end to end.
+Open your browser at `http://localhost:8501`.
 
-## Running on real footage
-Drop your video(s) into `data/raw_videos/`, then:
+---
+
+## CLI Usage
+
+### Running Detection on Video via Terminal
 ```bash
-python main.py --video data/raw_videos/your_clip.mp4 --output output/annotated.mp4 --json output/detections.json
+python main.py --video data/cep.mp4 --output output/annotated_output.mp4 --json output/detections.json
 ```
 
-## Output format (`detections.json`)
-```json
-[
-  {
-    "frame_index": 42,
-    "timestamp_sec": 1.4,
-    "detections": [
-      {
-        "class_name": "cow",
-        "confidence": 0.87,
-        "x1": 120.0, "y1": 340.0, "x2": 410.0, "y2": 610.0,
-        "zone": "CENTER",
-        "area_fraction": 0.081
-      }
-    ]
-  }
-]
+### Running Risk Analysis & Alert Synthesis
+```bash
+python risk_logic.py
 ```
-Person 2 reads this file (or calls `AnimalDetector.detect()` directly frame-by-frame
-for a live pipeline) and turns `zone` + `area_fraction` into risk levels
-(Low/Medium/High) and voice alerts.
-
-## Notes on accuracy / next steps (for documentation)
-- Current model is **pretrained only** (COCO) — no fine-tuning done.
-- For production-grade accuracy on Indian-specific cases (e.g. stray cattle
-  at unusual angles, breeds not well represented in COCO), fine-tuning on
-  Indian road datasets (DATS_2022, IDD, Roboflow Indian Roads Detection) is
-  the proposed next step — see project documentation for details.
-- Confidence threshold and risk-area thresholds are defined in `src/config.py`
-  and should be tuned against real test footage; log your reasoning for the
-  documentation/results section.
