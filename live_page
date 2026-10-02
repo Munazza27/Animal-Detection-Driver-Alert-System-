@@ -1,0 +1,306 @@
+"""
+live_page.py
+------------
+The redesigned "Live Demo & Driver HUD" page.
+Sources: webcam, bundled test clips, or an uploaded video.
+Voice alerts run in a background thread (src/voice.py) - no second terminal.
+"""
+
+import glob
+import json
+import os
+import time
+
+import cv2
+import numpy as np
+import streamlit as st
+import streamlit.components.v1 as components
+
+from src.config import LEFT_ZONE_END, RIGHT_ZONE_START, VERY_DARK_BRIGHTNESS
+from src.hud import draw_hud
+from src.utils import draw_detections, evaluate_detection_risk
+from src.voice import VoiceAlerter
+
+RANK = {"High": 3, "Medium": 2, "Low": 1}
+
+
+@st.cache_resource
+def get_voice() -> VoiceAlerter:
+    return VoiceAlerter()
+
+
+def _browser_speak(text: str, risk: str):
+    """Fallback voice: speaks in the browser (works when hosted remotely)."""
+    tone = "880" if risk == "High" else "600"
+    safe = json.dumps(text)
+    components.html(f"""<script>
+      try {{
+        var c = new (window.AudioContext||window.webkitAudioContext)();
+        var o = c.createOscillator(), g = c.createGain();
+        o.connect(g); g.connect(c.destination); o.frequency.value = {tone};
+        g.gain.setValueAtTime(0.2, c.currentTime);
+        g.gain.exponentialRampToValueAtTime(0.01, c.currentTime + 0.25);
+        o.start(); o.stop(c.currentTime + 0.25);
+        var u = new SpeechSynthesisUtterance({safe}); u.rate = 1.0;
+        window.speechSynthesis.cancel(); window.speechSynthesis.speak(u);
+      }} catch (e) {{}}
+    </script>""", height=0)
+
+
+def _open_camera(index: int):
+    backend = cv2.CAP_DSHOW if os.name == "nt" else cv2.CAP_ANY
+    cap = cv2.VideoCapture(index, backend)
+    cap.set(cv2.CAP_PROP_BUFFERSIZE, 1)
+    return cap
+
+
+def _load_cached_dets(video_path: str) -> dict:
+    """Pre-computed detections exist for cep.mp4 -> instant, smooth playback."""
+    if os.path.basename(video_path) == "cep.mp4" and os.path.exists("output/detections.json"):
+        with open("output/detections.json") as f:
+            return {i["frame_index"]: i.get("detections", []) for i in json.load(f)}
+    return {}
+
+
+def _score(dets):
+    """Pick the most dangerous detection -> (risk, alert, top_det)."""
+    if not dets:
+        return "None", None, None
+    top = max(dets, key=lambda d: (RANK.get(d.get("risk", "Low"), 0), d.get("area_fraction", 0)))
+    return top.get("risk", "Low"), top.get("alert"), top
+
+
+def render_live_page(conf_day, conf_night, voice_mode, show_lanes, detect_every):
+    voice = get_voice()
+    voice.enabled = voice_mode == "System voice (pyttsx3)"
+
+    st.markdown("""
+    <div class="page-head">
+      <div><div class="page-title">🦌 Driver Alert HUD</div>
+      <div class="page-sub">Live animal detection · risk-aware voice warnings</div></div>
+    </div>""", unsafe_allow_html=True)
+
+    # ---------------- source picker ----------------
+    ss = st.session_state
+    ss.setdefault("playing", False)
+    ss.setdefault("frame_idx", 0)
+    ss.setdefault("alert_log", [])
+
+    src_col, opt_col = st.columns([3, 2])
+    with src_col:
+        source = st.radio("Source", ["📹 Live camera", "🎞️ Test clip", "⬆️ Upload"],
+                          horizontal=True, label_visibility="collapsed")
+    path, cam_index = None, 0
+    with opt_col:
+        if source == "📹 Live camera":
+            cam_index = st.number_input("Camera index", 0, 9, 0, help="0 = default webcam")
+        elif source == "🎞️ Test clip":
+            clips = sorted(glob.glob("data/*.mp4"))
+            if clips:
+                path = st.selectbox("Clip", clips, format_func=os.path.basename,
+                                    label_visibility="collapsed")
+            else:
+                st.warning("No clips in data/")
+        else:
+            up = st.file_uploader("Video", type=["mp4", "mov", "avi"], label_visibility="collapsed")
+            if up:
+                os.makedirs("output", exist_ok=True)
+                path = "output/uploaded_temp.mp4"
+                with open(path, "wb") as f:
+                    f.write(up.read())
+
+    is_cam = source == "📹 Live camera"
+    if not is_cam and not (path and os.path.exists(path)):
+        st.info("Pick or upload a video to begin.")
+        return
+
+    # reset playback when the source changes
+    sig = f"cam{cam_index}" if is_cam else path
+    if ss.get("src_sig") != sig:
+        ss.src_sig, ss.frame_idx, ss.playing = sig, 0, False
+
+    total, fps = 0, 30.0
+    cached = {}
+    if not is_cam:
+        c = cv2.VideoCapture(path)
+        total = int(c.get(cv2.CAP_PROP_FRAME_COUNT)) or 1
+        fps = c.get(cv2.CAP_PROP_FPS) or 30.0
+        c.release()
+        cached = _load_cached_dets(path)
+
+    # ---------------- controls ----------------
+    b1, b2, b3, b4 = st.columns([1.3, 1.3, 2.4, 2])
+    if b1.button("⏹ Stop" if ss.playing else "▶ Start", type="primary", use_container_width=True):
+        ss.playing = not ss.playing
+    if b2.button("↺ Restart", use_container_width=True, disabled=is_cam):
+        ss.frame_idx, ss.playing = 0, False
+    speed = b3.select_slider("Speed", [0.5, 1.0, 1.5, 2.0], 1.0,
+                             format_func=lambda x: f"{x}×", disabled=is_cam)
+    use_live_model = b4.toggle("🤖 Run YOLO live", value=is_cam or not cached,
+                               help="Off = use pre-computed detections (only available for cep.mp4)",
+                               disabled=is_cam or not cached)
+    use_live_model = use_live_model or is_cam or not cached
+
+    # ---------------- layout ----------------
+    col_vid, col_hud = st.columns([7, 5], gap="medium")
+    with col_vid:
+        video_ph = st.empty()
+        caption_ph = st.empty()
+        if not is_cam:
+            if not ss.playing:
+                ss.frame_idx = st.slider("Timeline", 0, max(1, total - 1), ss.frame_idx,
+                                         label_visibility="collapsed")
+    with col_hud:
+        banner_ph = st.empty()
+        zones_ph = st.empty()
+        kpi_ph = st.empty()
+        st.markdown("<div class='sect'>Alert feed</div>", unsafe_allow_html=True)
+        feed_ph = st.empty()
+        browser_ph = st.empty()
+
+    # ---------------- detector (lazy) ----------------
+    def detect(frame, idx):
+        if not use_live_model and idx in cached:
+            dets = [dict(d) for d in cached[idx]]
+        else:
+            from src.detector import AnimalDetector
+            if "detector_instance" not in ss:
+                with st.spinner("Loading YOLOv8 model (first run only)…"):
+                    ss.detector_instance = AnimalDetector(confidence=conf_day, night_confidence=conf_night)
+            det = ss.detector_instance
+            det.confidence, det.night_confidence = conf_day, conf_night
+            dets = det.detect(frame, apply_preprocessing=True)
+        for d in dets:
+            d["risk"], d["alert"] = evaluate_detection_risk(d)
+        return dets
+
+    # ---------------- HUD panel painters ----------------
+    def paint_panel(dets, brightness, idx):
+        risk, alert, top = _score(dets)
+        cls = {"High": "high", "Medium": "medium", "Low": "low", "None": "clear"}[risk]
+        icon = {"High": "🚨", "Medium": "⚠️", "Low": "🟢", "None": "✅"}[risk]
+        head = {"High": "DANGER — SLOW DOWN", "Medium": "CAUTION", "Low": "LOW RISK",
+                "None": "ROAD CLEAR"}[risk]
+        sub = alert or "No animals in the driving corridor."
+        banner_ph.markdown(
+            f"<div class='risk-banner-{cls}'><div class='rb-title'>{icon} {head}</div>"
+            f"<div class='rb-sub'>{sub}</div></div>", unsafe_allow_html=True)
+
+        zr = {d["zone"]: d["risk"] for d in dets}
+        def zc(z):
+            return f"zone-active-{zr[z].lower()[:3]}" if z in zr else "zone-inactive"
+        zones_ph.markdown(
+            "<div class='zones'>"
+            f"<div class='zone-box {zc('LEFT')}'>LEFT<span>{'●' if 'LEFT' in zr else '—'}</span></div>"
+            f"<div class='zone-box {zc('CENTER')}' style='flex:1.4'>LANE<span>{'IN PATH' if 'CENTER' in zr else 'clear'}</span></div>"
+            f"<div class='zone-box {zc('RIGHT')}'>RIGHT<span>{'●' if 'RIGHT' in zr else '—'}</span></div>"
+            "</div>", unsafe_allow_html=True)
+
+        target = f"{top['class_name']} · {top['confidence']*100:.0f}%" if top else "—"
+        prox = f"{top['area_fraction']*100:.1f}%" if top else "—"
+        night = brightness < VERY_DARK_BRIGHTNESS
+        kpi_ph.markdown(
+            "<div class='kpi-grid'>"
+            f"<div class='kpi-card'><div class='kpi-title'>Target</div><div class='kpi-val'>{target}</div></div>"
+            f"<div class='kpi-card' style='border-left-color:#f59e0b'><div class='kpi-title'>Proximity</div><div class='kpi-val'>{prox}</div></div>"
+            f"<div class='kpi-card' style='border-left-color:#8b5cf6'><div class='kpi-title'>Lighting</div><div class='kpi-val'>{'🌙 Night' if night else '☀️ Day'}</div></div>"
+            f"<div class='kpi-card' style='border-left-color:#10b981'><div class='kpi-title'>In frame</div><div class='kpi-val'>{len(dets)}</div></div>"
+            "</div>", unsafe_allow_html=True)
+
+        rows = "".join(
+            f"<div class='feed-row feed-{r.lower()}'><span>{t}</span><b>{r}</b><em>{a}</em></div>"
+            for t, r, a in reversed(ss.alert_log[-6:])
+        ) or "<div class='feed-empty'>Nothing yet.</div>"
+        feed_ph.markdown(f"<div class='feed'>{rows}</div>", unsafe_allow_html=True)
+        return risk, alert
+
+    def handle_alert(risk, alert, clock):
+        if risk in ("High", "Medium") and alert:
+            if voice_mode == "System voice (pyttsx3)":
+                fired = voice.announce(risk, alert)
+            elif voice_mode == "Browser voice":
+                fired = voice._last_said.get(alert, 0) + voice.cooldown < time.time()
+                if fired:
+                    voice._last_said[alert] = time.time()
+                    with browser_ph:
+                        _browser_speak(alert, risk)
+            else:
+                fired = alert not in [a for _, _, a in ss.alert_log[-1:]]
+            if fired or not ss.alert_log or ss.alert_log[-1][2] != alert:
+                ss.alert_log.append((clock, risk, alert))
+
+    # ---------------- one frame ----------------
+    def process(frame, idx, dets, t0):
+        if frame.shape[1] > 960:
+            scale = 960 / frame.shape[1]
+            frame = cv2.resize(frame, None, fx=scale, fy=scale)
+            dets = [dict(d, x1=d["x1"]*scale, y1=d["y1"]*scale, x2=d["x2"]*scale, y2=d["y2"]*scale)
+                    for d in dets]
+        brightness = float(np.mean(cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)))
+        drawn = draw_detections(frame.copy(), dets, draw_lanes=show_lanes,
+                                left_zone_end=LEFT_ZONE_END, right_zone_start=RIGHT_ZONE_START)
+        risk, alert, _ = _score(dets)
+        clock = time.strftime("%H:%M:%S") if is_cam else f"{idx / fps:05.1f}s"
+        loop_fps = 1.0 / max(1e-3, time.time() - t0)
+        drawn = draw_hud(drawn, risk, alert, "CAMERA %d" % cam_index if is_cam else os.path.basename(path),
+                         fps_text=f"{loop_fps:4.1f} FPS", clock_text=clock, is_live=is_cam)
+        video_ph.image(cv2.cvtColor(drawn, cv2.COLOR_BGR2RGB), output_format="JPEG",
+                       use_container_width=True)
+        return dets, brightness, clock
+
+    # ---------------- paused: single still ----------------
+    if not ss.playing:
+        if is_cam:
+            video_ph.markdown("<div class='video-idle'>📹<br>Press <b>Start</b> to open the camera</div>",
+                              unsafe_allow_html=True)
+            paint_panel([], 128.0, 0)
+        else:
+            c = cv2.VideoCapture(path)
+            c.set(cv2.CAP_PROP_POS_FRAMES, ss.frame_idx)
+            ok, frame = c.read()
+            c.release()
+            if ok:
+                dets = detect(frame, ss.frame_idx)
+                dets, br, clock = process(frame, ss.frame_idx, dets, time.time() - 0.05)
+                paint_panel(dets, br, ss.frame_idx)
+                caption_ph.caption(f"Frame {ss.frame_idx}/{total}")
+        return
+
+    # ---------------- playing loop ----------------
+    cap = _open_camera(int(cam_index)) if is_cam else cv2.VideoCapture(path)
+    if not cap.isOpened():
+        ss.playing = False
+        st.error("Could not open the video source. Check the camera index / permissions.")
+        return
+    if not is_cam:
+        cap.set(cv2.CAP_PROP_POS_FRAMES, ss.frame_idx)
+
+    stride = 1 if is_cam else max(1, int(round(speed)))
+    frame_time = 1.0 / (fps * (1 if is_cam else speed)) * stride
+    dets, n, br = [], 0, 128.0
+    try:
+        while ss.playing:
+            t0 = time.time()
+            for _ in range(stride - 1):
+                cap.grab()
+                ss.frame_idx += 1
+            ok, frame = cap.read()
+            if not ok:
+                ss.playing = False
+                if not is_cam:
+                    ss.frame_idx = 0
+                break
+            idx = ss.frame_idx = ss.frame_idx + (0 if is_cam else 1)
+
+            if n % max(1, detect_every) == 0 or not use_live_model:
+                dets = detect(frame, idx)
+            dets, br, clock = process(frame, idx, dets, t0)
+            if n % 3 == 0:
+                risk, alert = paint_panel(dets, br, idx)
+                handle_alert(risk, alert, clock)
+            n += 1
+            if not is_cam:
+                caption_ph.caption(f"Frame {idx}/{total}")
+                time.sleep(max(0.0, frame_time - (time.time() - t0)))
+    finally:
+        cap.release()

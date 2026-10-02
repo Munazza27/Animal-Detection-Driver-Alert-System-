@@ -204,6 +204,32 @@ def play_audio_alert_script(risk: str):
     return js_code
 
 
+def speak_alert_script(message: str, nonce: int):
+    """
+    Generates embedded JavaScript that makes the BROWSER speak the
+    alert out loud (Web Speech API) -- this is what lets a phone
+    opened to this page actually say "Warning, Deer ahead" rather
+    than just beeping. `nonce` must change every time a NEW alert
+    should be spoken (e.g. a counter), otherwise Streamlit won't
+    re-render the component and the browser won't re-trigger it.
+    """
+    import json as _json
+    safe_message = _json.dumps(message)
+    return f"""
+    <script>
+    (function() {{
+        try {{
+            window.speechSynthesis.cancel();
+            var utter = new SpeechSynthesisUtterance({safe_message});
+            utter.rate = 1.0;
+            window.speechSynthesis.speak(utter);
+        }} catch(e) {{}}
+    }})();
+    </script>
+    <!-- nonce:{nonce} -->
+    """
+
+
 # -------------------------------------------------------------
 # SIDEBAR CONFIGURATION
 # -------------------------------------------------------------
@@ -245,8 +271,199 @@ if nav_choice == "🎥 Live Demo & Driver HUD":
 
     col_v1, col_v2, col_v3 = st.columns([2, 2, 2])
     with col_v1:
-        video_source_mode = st.selectbox("Video Source", ["Preloaded Test Clip", "Upload Custom Video"])
-    
+        video_source_mode = st.selectbox(
+            "Video Source",
+            ["Preloaded Test Clip", "Upload Custom Video", "📱 Live Phone Camera"]
+        )
+
+    # -----------------------------------------------------------
+    # LIVE PHONE CAMERA MODE -- separate flow, bypasses the file/
+    # scrubber-based playback below entirely. Reuses the same HUD
+    # placeholders (risk banner, corridor, metrics) for a consistent
+    # look with the rest of the dashboard.
+    # -----------------------------------------------------------
+    if video_source_mode == "📱 Live Phone Camera":
+        from src.stream import open_source
+        from src.detector import AnimalDetector
+
+        with col_v2:
+            camera_source = st.text_input(
+                "Camera index (e.g. 1 for Camo) or stream URL",
+                value="1",
+                help="Find your phone's index with tests/find_camera.py, or paste an IP-camera URL."
+            )
+        with col_v3:
+            voice_enabled = st.checkbox("🗣️ Spoken alerts (not just beep)", value=True)
+
+        st.markdown("---")
+        col_vid, col_hud = st.columns([7, 5])
+
+        with col_vid:
+            st.markdown("##### 📱 Live Phone Camera Feed")
+            video_placeholder = st.empty()
+            audio_placeholder = st.empty()
+            voice_placeholder = st.empty()
+            fps_caption = st.empty()
+            live_running = st.checkbox("▶ Start Live Detection", value=False)
+
+        with col_hud:
+            st.markdown("##### 🛡️ Driver Alert HUD & Risk Status")
+            risk_banner_placeholder = st.empty()
+            corridor_placeholder = st.empty()
+            metrics_placeholder = st.empty()
+            alert_log_placeholder = st.empty()
+
+        if not live_running:
+            risk_banner_placeholder.markdown("""
+            <div class="risk-banner-clear">
+                <div style="font-size: 1.3rem; font-weight: 700;">⏸ Live detection stopped</div>
+                <div style="font-size: 0.95rem; margin-top: 4px;">Check "Start Live Detection" to begin.</div>
+            </div>
+            """, unsafe_allow_html=True)
+            video_placeholder.info("Live feed will appear here once detection starts.")
+        else:
+            if "detector_instance" not in st.session_state:
+                with st.spinner("Initializing YOLOv8 model..."):
+                    st.session_state.detector_instance = AnimalDetector(
+                        confidence=conf_day, night_confidence=conf_night
+                    )
+            detector = st.session_state.detector_instance
+            detector.confidence = conf_day
+            detector.night_confidence = conf_night
+
+            cap, _ = open_source(camera_source)
+            if not cap.isOpened():
+                st.error(f"Could not open camera source: {camera_source}. "
+                         f"Check Camo is running and the index/URL is correct.")
+            else:
+                max_width = 640
+                frame_count = 0
+                last_spoken_risk = None
+                alert_nonce = 0
+                start_time = time.time()
+
+                while live_running:
+                    ret, frame = cap.read()
+                    if not ret:
+                        st.warning("Camera/stream lost.")
+                        break
+
+                    h, w = frame.shape[:2]
+                    if w > max_width:
+                        scale = max_width / w
+                        frame = cv2.resize(frame, (max_width, int(h * scale)))
+
+                    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+                    brightness = float(np.mean(gray))
+                    is_night = brightness < VERY_DARK_BRIGHTNESS
+
+                    raw_dets = detector.detect(frame, apply_preprocessing=True)
+                    for d in raw_dets:
+                        r, a = evaluate_detection_risk(d)
+                        d["risk"] = r
+                        d["alert"] = a
+
+                    annotated_bgr = draw_detections(
+                        frame.copy(), raw_dets,
+                        draw_lanes=show_lanes,
+                        left_zone_end=LEFT_ZONE_END,
+                        right_zone_start=RIGHT_ZONE_START
+                    )
+                    annotated_rgb = cv2.cvtColor(annotated_bgr, cv2.COLOR_BGR2RGB)
+                    video_placeholder.image(annotated_rgb, use_container_width=True)
+
+                    # Highest-risk detection this frame
+                    highest_risk, active_alert, active_animal, active_zone = "None", None, None, None
+                    max_area, max_conf = 0.0, 0.0
+                    if raw_dets:
+                        risk_ranks = {"High": 3, "Medium": 2, "Low": 1}
+                        top = sorted(raw_dets, key=lambda d: (risk_ranks.get(d.get("risk", "Low"), 0), d.get("area_fraction", 0)), reverse=True)[0]
+                        highest_risk = top.get("risk", "Low")
+                        active_alert = top.get("alert")
+                        active_animal = top.get("class_name")
+                        active_zone = top.get("zone", "CENTER")
+                        max_area = top.get("area_fraction", 0.0)
+                        max_conf = top.get("confidence", 0.0)
+
+                    if highest_risk == "High":
+                        risk_banner_placeholder.markdown(f"""
+                        <div class="risk-banner-high">
+                            <div style="font-size: 1.6rem; font-weight: 800;">🔴 CRITICAL HAZARD — HIGH RISK</div>
+                            <div style="font-size: 1.15rem; font-weight: 600; margin-top: 6px;">{active_alert}</div>
+                        </div>""", unsafe_allow_html=True)
+                        if enable_audio:
+                            audio_placeholder.markdown(play_audio_alert_script("High"), unsafe_allow_html=True)
+                    elif highest_risk == "Medium":
+                        risk_banner_placeholder.markdown(f"""
+                        <div class="risk-banner-medium">
+                            <div style="font-size: 1.5rem; font-weight: 800;">🟡 CAUTION — MEDIUM RISK</div>
+                            <div style="font-size: 1.1rem; font-weight: 600; margin-top: 6px;">{active_alert}</div>
+                        </div>""", unsafe_allow_html=True)
+                        if enable_audio:
+                            audio_placeholder.markdown(play_audio_alert_script("Medium"), unsafe_allow_html=True)
+                    elif highest_risk == "Low":
+                        risk_banner_placeholder.markdown(f"""
+                        <div class="risk-banner-low">
+                            <div style="font-size: 1.4rem; font-weight: 700;">🟢 ADVISORY — LOW RISK</div>
+                            <div style="font-size: 1.0rem; font-weight: 500; margin-top: 4px;">{active_alert}</div>
+                        </div>""", unsafe_allow_html=True)
+                    else:
+                        risk_banner_placeholder.markdown("""
+                        <div class="risk-banner-clear">
+                            <div style="font-size: 1.3rem; font-weight: 700;">✅ ROAD CORRIDOR CLEAR</div>
+                        </div>""", unsafe_allow_html=True)
+
+                    zones_present = {d.get("zone"): d.get("risk", "Low") for d in raw_dets}
+                    def _zc(z):
+                        if z in zones_present:
+                            return f"zone-active-{zones_present[z].lower()[:3]}"
+                        return "zone-inactive"
+                    corridor_placeholder.markdown(f"""
+                    <div style="display: flex; gap: 8px; margin-top: 14px; margin-bottom: 14px;">
+                        <div class="zone-box {_zc('LEFT')}" style="flex: 1;">LEFT<br><span style="font-size:0.75rem;">{'⚠️ ACTIVE' if 'LEFT' in zones_present else 'CLEAR'}</span></div>
+                        <div class="zone-box {_zc('CENTER')}" style="flex: 1.4;">CENTER<br><span style="font-size:0.75rem;">{'🚨 IN PATH' if 'CENTER' in zones_present else 'CLEAR'}</span></div>
+                        <div class="zone-box {_zc('RIGHT')}" style="flex: 1;">RIGHT<br><span style="font-size:0.75rem;">{'⚠️ ACTIVE' if 'RIGHT' in zones_present else 'CLEAR'}</span></div>
+                    </div>""", unsafe_allow_html=True)
+
+                    lighting_badge = "🌙 Night (MSRCR Active)" if is_night else "☀️ Daylight Mode"
+                    dist_proxy = f"{max_area*100:.1f}% frame" if raw_dets else "N/A"
+                    target_display = f"{active_animal} ({max_conf*100:.0f}%)" if active_animal else "None"
+                    metrics_placeholder.markdown(f"""
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 12px;">
+                        <div class="kpi-card"><div class="kpi-title">Detected Target</div><div style="font-size:1.25rem;font-weight:700;color:#60a5fa;">{target_display}</div><div class="kpi-subtitle">Zone: {active_zone or 'None'}</div></div>
+                        <div class="kpi-card"><div class="kpi-title">Proximity</div><div style="font-size:1.25rem;font-weight:700;color:#f59e0b;">{dist_proxy}</div><div class="kpi-subtitle">BBox Fraction</div></div>
+                        <div class="kpi-card"><div class="kpi-title">Lighting</div><div style="font-size:1.1rem;font-weight:700;color:#a78bfa;">{lighting_badge}</div><div class="kpi-subtitle">Brightness: {brightness:.1f}/255</div></div>
+                        <div class="kpi-card"><div class="kpi-title">Live Targets</div><div style="font-size:1.25rem;font-weight:700;color:#34d399;">{len(raw_dets)} Animals</div><div class="kpi-subtitle">Frame #{frame_count}</div></div>
+                    </div>""", unsafe_allow_html=True)
+
+                    if raw_dets:
+                        df_frame = pd.DataFrame(raw_dets)[["class_name", "confidence", "zone", "area_fraction", "risk"]]
+                        df_frame["confidence"] = df_frame["confidence"].map(lambda x: f"{x*100:.1f}%")
+                        df_frame["area_fraction"] = df_frame["area_fraction"].map(lambda x: f"{x*100:.2f}%")
+                        alert_log_placeholder.dataframe(df_frame, use_container_width=True, hide_index=True)
+                    else:
+                        alert_log_placeholder.caption("No animal detected right now.")
+
+                    # Speak only when risk level CHANGES -- not every frame
+                    if voice_enabled and highest_risk != "None" and highest_risk != last_spoken_risk:
+                        last_spoken_risk = highest_risk
+                        alert_nonce += 1
+                        voice_placeholder.markdown(
+                            speak_alert_script(active_alert or f"{highest_risk} risk detected", alert_nonce),
+                            unsafe_allow_html=True
+                        )
+                    elif highest_risk == "None":
+                        last_spoken_risk = None
+
+                    frame_count += 1
+                    if frame_count % 10 == 0:
+                        elapsed = time.time() - start_time
+                        fps_caption.caption(f"{frame_count/elapsed:.1f} FPS")
+
+                cap.release()
+
+        st.stop()  # don't fall through to the file-based playback flow below
+
     selected_video_path = None
     if video_source_mode == "Preloaded Test Clip":
         with col_v2:
