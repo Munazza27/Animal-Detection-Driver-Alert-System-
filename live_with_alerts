@@ -1,0 +1,107 @@
+﻿import argparse
+import threading
+import time
+
+import cv2
+
+from src.detector import AnimalDetector
+from src.utils import draw_detections
+from src.stream import open_source
+from src.config import RISK_AREA_THRESHOLDS
+from src import alert_server
+
+
+def classify_risk(detections):
+    if not detections:
+        return "NONE", "No animal detected", None, None
+
+    closest = max(detections, key=lambda d: d["area_fraction"])
+    area = closest["area_fraction"]
+    zone = closest["zone"]
+    class_name = closest["class_name"]
+
+    if area >= RISK_AREA_THRESHOLDS["MEDIUM"]:
+        risk = "HIGH"
+        message = f"Warning, {class_name} ahead, slow down" if zone == "CENTER" else f"Warning, {class_name} on {zone.lower()}"
+    elif area >= RISK_AREA_THRESHOLDS["LOW"]:
+        risk = "MEDIUM"
+        message = f"Caution, {class_name} approaching"
+    else:
+        risk = "LOW"
+        message = f"Caution, {class_name} on {zone.lower()}" if zone != "CENTER" else f"Caution, {class_name} ahead"
+
+    return risk, message, zone, class_name
+
+
+def main():
+    parser = argparse.ArgumentParser(description="Live detection with wireless phone alerts.")
+    parser.add_argument("--video", type=str, default="1", help="Camera index or stream URL")
+    parser.add_argument("--show", action="store_true", help="Show annotated feed on this laptop")
+    parser.add_argument("--port", type=int, default=5000, help="Port for the phone alert page")
+    args = parser.parse_args()
+
+    server_thread = threading.Thread(target=alert_server.run_server, kwargs={"port": args.port}, daemon=True)
+    server_thread.start()
+    time.sleep(1)
+
+    detector = AnimalDetector()
+    cap, live = open_source(args.video)
+    if not cap.isOpened():
+        print(f"Could not open source: {args.video}")
+        return
+
+    max_width = 640
+    last_risk = "NONE"
+    frame_index = 0
+    start_time = time.time()
+
+    if args.show:
+        cv2.namedWindow("Live Detection", cv2.WINDOW_NORMAL)
+        cv2.resizeWindow("Live Detection", 800, 600)
+        cv2.moveWindow("Live Detection", 100, 100)
+
+    print("Detection running. Press Ctrl+C to stop.\n")
+
+    try:
+        while True:
+            ret, frame = cap.read()
+            if not ret:
+                print("Camera/stream lost.")
+                break
+
+            h, w = frame.shape[:2]
+            if w > max_width:
+                scale = max_width / w
+                frame = cv2.resize(frame, (max_width, int(h * scale)))
+
+            detections = detector.detect(frame)
+            risk, message, zone, class_name = classify_risk(detections)
+
+            is_new_alert = (risk != last_risk) and (risk != "NONE")
+            alert_server.update_status(risk, message, zone, class_name, new_alert=is_new_alert)
+            last_risk = risk
+
+            if args.show:
+                annotated = draw_detections(frame.copy(), detections)
+                try:
+                    cv2.imshow("Live Detection", annotated)
+                    if cv2.waitKey(1) & 0xFF == ord("q"):
+                        break
+                except cv2.error:
+                    pass
+
+            frame_index += 1
+            if frame_index % 30 == 0:
+                elapsed = time.time() - start_time
+                print(f"{frame_index} frames | {frame_index/elapsed:.1f} FPS | current risk: {risk}")
+
+    except KeyboardInterrupt:
+        print("\nStopped.")
+    finally:
+        cap.release()
+        if args.show:
+            cv2.destroyAllWindows()
+
+
+if __name__ == "__main__":
+    main()

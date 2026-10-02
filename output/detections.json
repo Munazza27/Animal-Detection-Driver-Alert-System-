@@ -1,3984 +1,2802 @@
 [
   {
     "frame_index": 0,
-    "timestamp_sec": 0.0,
+    "timestamp_sec": 7.205,
     "detections": []
   },
   {
     "frame_index": 1,
-    "timestamp_sec": 0.033,
+    "timestamp_sec": 7.763,
     "detections": []
   },
   {
     "frame_index": 2,
-    "timestamp_sec": 0.067,
+    "timestamp_sec": 8.225,
     "detections": []
   },
   {
     "frame_index": 3,
-    "timestamp_sec": 0.1,
+    "timestamp_sec": 9.103,
     "detections": []
   },
   {
     "frame_index": 4,
-    "timestamp_sec": 0.133,
+    "timestamp_sec": 10.114,
     "detections": []
   },
   {
     "frame_index": 5,
-    "timestamp_sec": 0.167,
+    "timestamp_sec": 11.097,
     "detections": []
   },
   {
     "frame_index": 6,
-    "timestamp_sec": 0.2,
+    "timestamp_sec": 12.104,
     "detections": []
   },
   {
     "frame_index": 7,
-    "timestamp_sec": 0.233,
+    "timestamp_sec": 13.143,
     "detections": []
   },
   {
     "frame_index": 8,
-    "timestamp_sec": 0.267,
+    "timestamp_sec": 14.133,
     "detections": []
   },
   {
     "frame_index": 9,
-    "timestamp_sec": 0.3,
+    "timestamp_sec": 15.212,
     "detections": []
   },
   {
     "frame_index": 10,
-    "timestamp_sec": 0.333,
+    "timestamp_sec": 16.432,
     "detections": []
   },
   {
     "frame_index": 11,
-    "timestamp_sec": 0.367,
+    "timestamp_sec": 17.563,
     "detections": []
   },
   {
     "frame_index": 12,
-    "timestamp_sec": 0.4,
+    "timestamp_sec": 18.438,
     "detections": []
   },
   {
     "frame_index": 13,
-    "timestamp_sec": 0.433,
+    "timestamp_sec": 19.427,
     "detections": []
   },
   {
     "frame_index": 14,
-    "timestamp_sec": 0.467,
+    "timestamp_sec": 20.467,
     "detections": []
   },
   {
     "frame_index": 15,
-    "timestamp_sec": 0.5,
+    "timestamp_sec": 21.518,
     "detections": []
   },
   {
     "frame_index": 16,
-    "timestamp_sec": 0.533,
+    "timestamp_sec": 22.508,
     "detections": []
   },
   {
     "frame_index": 17,
-    "timestamp_sec": 0.567,
+    "timestamp_sec": 23.547,
     "detections": []
   },
   {
     "frame_index": 18,
-    "timestamp_sec": 0.6,
+    "timestamp_sec": 24.521,
     "detections": []
   },
   {
     "frame_index": 19,
-    "timestamp_sec": 0.633,
+    "timestamp_sec": 25.514,
     "detections": []
   },
   {
     "frame_index": 20,
-    "timestamp_sec": 0.667,
+    "timestamp_sec": 26.502,
     "detections": []
   },
   {
     "frame_index": 21,
-    "timestamp_sec": 0.7,
+    "timestamp_sec": 27.682,
     "detections": []
   },
   {
     "frame_index": 22,
-    "timestamp_sec": 0.733,
+    "timestamp_sec": 28.752,
     "detections": []
   },
   {
     "frame_index": 23,
-    "timestamp_sec": 0.767,
+    "timestamp_sec": 29.729,
     "detections": []
   },
   {
     "frame_index": 24,
-    "timestamp_sec": 0.8,
+    "timestamp_sec": 30.755,
     "detections": []
   },
   {
     "frame_index": 25,
-    "timestamp_sec": 0.833,
+    "timestamp_sec": 31.801,
     "detections": []
   },
   {
     "frame_index": 26,
-    "timestamp_sec": 0.867,
+    "timestamp_sec": 32.917,
     "detections": []
   },
   {
     "frame_index": 27,
-    "timestamp_sec": 0.9,
+    "timestamp_sec": 34.046,
     "detections": []
   },
   {
     "frame_index": 28,
-    "timestamp_sec": 0.933,
+    "timestamp_sec": 35.263,
     "detections": []
   },
   {
     "frame_index": 29,
-    "timestamp_sec": 0.967,
+    "timestamp_sec": 36.556,
     "detections": []
   },
   {
     "frame_index": 30,
-    "timestamp_sec": 1.0,
+    "timestamp_sec": 37.86,
     "detections": []
   },
   {
     "frame_index": 31,
-    "timestamp_sec": 1.033,
+    "timestamp_sec": 39.083,
     "detections": []
   },
   {
     "frame_index": 32,
-    "timestamp_sec": 1.067,
+    "timestamp_sec": 40.171,
     "detections": []
   },
   {
     "frame_index": 33,
-    "timestamp_sec": 1.1,
+    "timestamp_sec": 41.101,
     "detections": []
   },
   {
     "frame_index": 34,
-    "timestamp_sec": 1.133,
+    "timestamp_sec": 41.942,
     "detections": []
   },
   {
     "frame_index": 35,
-    "timestamp_sec": 1.167,
+    "timestamp_sec": 42.918,
     "detections": []
   },
   {
     "frame_index": 36,
-    "timestamp_sec": 1.2,
+    "timestamp_sec": 43.957,
     "detections": []
   },
   {
     "frame_index": 37,
-    "timestamp_sec": 1.233,
+    "timestamp_sec": 44.961,
     "detections": []
   },
   {
     "frame_index": 38,
-    "timestamp_sec": 1.267,
+    "timestamp_sec": 45.786,
     "detections": []
   },
   {
     "frame_index": 39,
-    "timestamp_sec": 1.3,
+    "timestamp_sec": 46.832,
     "detections": []
   },
   {
     "frame_index": 40,
-    "timestamp_sec": 1.333,
+    "timestamp_sec": 47.903,
     "detections": []
   },
   {
     "frame_index": 41,
-    "timestamp_sec": 1.367,
+    "timestamp_sec": 48.826,
     "detections": []
   },
   {
     "frame_index": 42,
-    "timestamp_sec": 1.4,
+    "timestamp_sec": 49.647,
     "detections": []
   },
   {
     "frame_index": 43,
-    "timestamp_sec": 1.433,
+    "timestamp_sec": 50.685,
     "detections": []
   },
   {
     "frame_index": 44,
-    "timestamp_sec": 1.467,
+    "timestamp_sec": 51.597,
     "detections": []
   },
   {
     "frame_index": 45,
-    "timestamp_sec": 1.5,
+    "timestamp_sec": 52.514,
     "detections": []
   },
   {
     "frame_index": 46,
-    "timestamp_sec": 1.533,
+    "timestamp_sec": 53.167,
     "detections": []
   },
   {
     "frame_index": 47,
-    "timestamp_sec": 1.567,
+    "timestamp_sec": 54.193,
     "detections": []
   },
   {
     "frame_index": 48,
-    "timestamp_sec": 1.6,
+    "timestamp_sec": 55.19,
     "detections": []
   },
   {
     "frame_index": 49,
-    "timestamp_sec": 1.633,
+    "timestamp_sec": 56.18,
     "detections": []
   },
   {
     "frame_index": 50,
-    "timestamp_sec": 1.667,
+    "timestamp_sec": 57.176,
     "detections": []
   },
   {
     "frame_index": 51,
-    "timestamp_sec": 1.7,
+    "timestamp_sec": 58.174,
     "detections": []
   },
   {
     "frame_index": 52,
-    "timestamp_sec": 1.733,
+    "timestamp_sec": 59.941,
     "detections": []
   },
   {
     "frame_index": 53,
-    "timestamp_sec": 1.767,
+    "timestamp_sec": 60.444,
     "detections": []
   },
   {
     "frame_index": 54,
-    "timestamp_sec": 1.8,
+    "timestamp_sec": 61.203,
     "detections": []
   },
   {
     "frame_index": 55,
-    "timestamp_sec": 1.833,
+    "timestamp_sec": 62.497,
     "detections": []
   },
   {
     "frame_index": 56,
-    "timestamp_sec": 1.867,
+    "timestamp_sec": 63.522,
     "detections": []
   },
   {
     "frame_index": 57,
-    "timestamp_sec": 1.9,
+    "timestamp_sec": 64.565,
     "detections": []
   },
   {
     "frame_index": 58,
-    "timestamp_sec": 1.933,
+    "timestamp_sec": 65.506,
     "detections": []
   },
   {
     "frame_index": 59,
-    "timestamp_sec": 1.967,
+    "timestamp_sec": 66.512,
     "detections": []
   },
   {
     "frame_index": 60,
-    "timestamp_sec": 2.0,
+    "timestamp_sec": 67.519,
     "detections": []
   },
   {
     "frame_index": 61,
-    "timestamp_sec": 2.033,
+    "timestamp_sec": 68.521,
     "detections": []
   },
   {
     "frame_index": 62,
-    "timestamp_sec": 2.067,
+    "timestamp_sec": 69.52,
     "detections": []
   },
   {
     "frame_index": 63,
-    "timestamp_sec": 2.1,
+    "timestamp_sec": 70.545,
     "detections": []
   },
   {
     "frame_index": 64,
-    "timestamp_sec": 2.133,
+    "timestamp_sec": 71.569,
     "detections": []
   },
   {
     "frame_index": 65,
-    "timestamp_sec": 2.167,
+    "timestamp_sec": 72.516,
     "detections": []
   },
   {
     "frame_index": 66,
-    "timestamp_sec": 2.2,
+    "timestamp_sec": 73.523,
     "detections": []
   },
   {
     "frame_index": 67,
-    "timestamp_sec": 2.233,
+    "timestamp_sec": 74.555,
     "detections": []
   },
   {
     "frame_index": 68,
-    "timestamp_sec": 2.267,
+    "timestamp_sec": 75.722,
     "detections": []
   },
   {
     "frame_index": 69,
-    "timestamp_sec": 2.3,
+    "timestamp_sec": 76.653,
     "detections": []
   },
   {
     "frame_index": 70,
-    "timestamp_sec": 2.333,
+    "timestamp_sec": 77.69,
     "detections": []
   },
   {
     "frame_index": 71,
-    "timestamp_sec": 2.367,
+    "timestamp_sec": 78.709,
     "detections": []
   },
   {
     "frame_index": 72,
-    "timestamp_sec": 2.4,
+    "timestamp_sec": 79.594,
     "detections": []
   },
   {
     "frame_index": 73,
-    "timestamp_sec": 2.433,
+    "timestamp_sec": 80.547,
     "detections": []
   },
   {
     "frame_index": 74,
-    "timestamp_sec": 2.467,
+    "timestamp_sec": 81.623,
     "detections": []
   },
   {
     "frame_index": 75,
-    "timestamp_sec": 2.5,
+    "timestamp_sec": 82.555,
     "detections": []
   },
   {
     "frame_index": 76,
-    "timestamp_sec": 2.533,
+    "timestamp_sec": 83.604,
     "detections": []
   },
   {
     "frame_index": 77,
-    "timestamp_sec": 2.567,
+    "timestamp_sec": 84.659,
     "detections": []
   },
   {
     "frame_index": 78,
-    "timestamp_sec": 2.6,
+    "timestamp_sec": 85.782,
     "detections": []
   },
   {
     "frame_index": 79,
-    "timestamp_sec": 2.633,
+    "timestamp_sec": 86.874,
     "detections": []
   },
   {
     "frame_index": 80,
-    "timestamp_sec": 2.667,
+    "timestamp_sec": 87.842,
     "detections": []
   },
   {
     "frame_index": 81,
-    "timestamp_sec": 2.7,
+    "timestamp_sec": 89.175,
     "detections": []
   },
   {
     "frame_index": 82,
-    "timestamp_sec": 2.733,
+    "timestamp_sec": 90.175,
     "detections": []
   },
   {
     "frame_index": 83,
-    "timestamp_sec": 2.767,
+    "timestamp_sec": 91.059,
     "detections": []
   },
   {
     "frame_index": 84,
-    "timestamp_sec": 2.8,
+    "timestamp_sec": 92.074,
     "detections": []
   },
   {
     "frame_index": 85,
-    "timestamp_sec": 2.833,
+    "timestamp_sec": 93.159,
     "detections": []
   },
   {
     "frame_index": 86,
-    "timestamp_sec": 2.867,
+    "timestamp_sec": 94.073,
     "detections": []
   },
   {
     "frame_index": 87,
-    "timestamp_sec": 2.9,
+    "timestamp_sec": 94.599,
     "detections": []
   },
   {
     "frame_index": 88,
-    "timestamp_sec": 2.933,
+    "timestamp_sec": 95.214,
     "detections": []
   },
   {
     "frame_index": 89,
-    "timestamp_sec": 2.967,
+    "timestamp_sec": 96.217,
     "detections": []
   },
   {
     "frame_index": 90,
-    "timestamp_sec": 3.0,
+    "timestamp_sec": 97.386,
     "detections": []
   },
   {
     "frame_index": 91,
-    "timestamp_sec": 3.033,
+    "timestamp_sec": 98.207,
     "detections": []
   },
   {
     "frame_index": 92,
-    "timestamp_sec": 3.067,
+    "timestamp_sec": 99.237,
     "detections": []
   },
   {
     "frame_index": 93,
-    "timestamp_sec": 3.1,
+    "timestamp_sec": 102.624,
     "detections": []
   },
   {
     "frame_index": 94,
-    "timestamp_sec": 3.133,
+    "timestamp_sec": 106.031,
     "detections": []
   },
   {
     "frame_index": 95,
-    "timestamp_sec": 3.167,
+    "timestamp_sec": 108.861,
     "detections": []
   },
   {
     "frame_index": 96,
-    "timestamp_sec": 3.2,
+    "timestamp_sec": 111.902,
     "detections": []
   },
   {
     "frame_index": 97,
-    "timestamp_sec": 3.233,
+    "timestamp_sec": 114.601,
     "detections": []
   },
   {
     "frame_index": 98,
-    "timestamp_sec": 3.267,
+    "timestamp_sec": 116.643,
     "detections": []
   },
   {
     "frame_index": 99,
-    "timestamp_sec": 3.3,
+    "timestamp_sec": 119.01,
     "detections": []
   },
   {
     "frame_index": 100,
-    "timestamp_sec": 3.333,
+    "timestamp_sec": 120.798,
     "detections": []
   },
   {
     "frame_index": 101,
-    "timestamp_sec": 3.367,
+    "timestamp_sec": 122.648,
     "detections": []
   },
   {
     "frame_index": 102,
-    "timestamp_sec": 3.4,
+    "timestamp_sec": 124.498,
     "detections": []
   },
   {
     "frame_index": 103,
-    "timestamp_sec": 3.433,
+    "timestamp_sec": 126.578,
     "detections": []
   },
   {
     "frame_index": 104,
-    "timestamp_sec": 3.467,
+    "timestamp_sec": 128.561,
     "detections": []
   },
   {
     "frame_index": 105,
-    "timestamp_sec": 3.5,
+    "timestamp_sec": 131.133,
     "detections": []
   },
   {
     "frame_index": 106,
-    "timestamp_sec": 3.533,
+    "timestamp_sec": 133.079,
     "detections": []
   },
   {
     "frame_index": 107,
-    "timestamp_sec": 3.567,
+    "timestamp_sec": 135.291,
     "detections": []
   },
   {
     "frame_index": 108,
-    "timestamp_sec": 3.6,
+    "timestamp_sec": 137.399,
     "detections": []
   },
   {
     "frame_index": 109,
-    "timestamp_sec": 3.633,
+    "timestamp_sec": 139.805,
     "detections": []
   },
   {
     "frame_index": 110,
-    "timestamp_sec": 3.667,
+    "timestamp_sec": 141.823,
     "detections": []
   },
   {
     "frame_index": 111,
-    "timestamp_sec": 3.7,
+    "timestamp_sec": 143.905,
     "detections": []
   },
   {
     "frame_index": 112,
-    "timestamp_sec": 3.733,
+    "timestamp_sec": 145.9,
     "detections": []
   },
   {
     "frame_index": 113,
-    "timestamp_sec": 3.767,
+    "timestamp_sec": 148.292,
     "detections": []
   },
   {
     "frame_index": 114,
-    "timestamp_sec": 3.8,
+    "timestamp_sec": 150.197,
     "detections": []
   },
   {
     "frame_index": 115,
-    "timestamp_sec": 3.833,
+    "timestamp_sec": 152.181,
     "detections": []
   },
   {
     "frame_index": 116,
-    "timestamp_sec": 3.867,
+    "timestamp_sec": 153.719,
     "detections": []
   },
   {
     "frame_index": 117,
-    "timestamp_sec": 3.9,
+    "timestamp_sec": 155.748,
     "detections": []
   },
   {
     "frame_index": 118,
-    "timestamp_sec": 3.933,
+    "timestamp_sec": 157.797,
     "detections": []
   },
   {
     "frame_index": 119,
-    "timestamp_sec": 3.967,
+    "timestamp_sec": 159.526,
     "detections": []
   },
   {
     "frame_index": 120,
-    "timestamp_sec": 4.0,
+    "timestamp_sec": 161.856,
     "detections": []
   },
   {
     "frame_index": 121,
-    "timestamp_sec": 4.033,
+    "timestamp_sec": 164.436,
     "detections": []
   },
   {
     "frame_index": 122,
-    "timestamp_sec": 4.067,
+    "timestamp_sec": 166.624,
     "detections": []
   },
   {
     "frame_index": 123,
-    "timestamp_sec": 4.1,
+    "timestamp_sec": 168.797,
     "detections": []
   },
   {
     "frame_index": 124,
-    "timestamp_sec": 4.133,
+    "timestamp_sec": 170.607,
     "detections": []
   },
   {
     "frame_index": 125,
-    "timestamp_sec": 4.167,
+    "timestamp_sec": 172.416,
     "detections": []
   },
   {
     "frame_index": 126,
-    "timestamp_sec": 4.2,
+    "timestamp_sec": 174.452,
     "detections": []
   },
   {
     "frame_index": 127,
-    "timestamp_sec": 4.233,
+    "timestamp_sec": 176.455,
     "detections": []
   },
   {
     "frame_index": 128,
-    "timestamp_sec": 4.267,
+    "timestamp_sec": 178.69,
     "detections": []
   },
   {
     "frame_index": 129,
-    "timestamp_sec": 4.3,
+    "timestamp_sec": 180.649,
     "detections": []
   },
   {
     "frame_index": 130,
-    "timestamp_sec": 4.333,
+    "timestamp_sec": 182.763,
     "detections": []
   },
   {
     "frame_index": 131,
-    "timestamp_sec": 4.367,
+    "timestamp_sec": 184.468,
     "detections": []
   },
   {
     "frame_index": 132,
-    "timestamp_sec": 4.4,
+    "timestamp_sec": 186.303,
     "detections": []
   },
   {
     "frame_index": 133,
-    "timestamp_sec": 4.433,
+    "timestamp_sec": 188.398,
     "detections": []
   },
   {
     "frame_index": 134,
-    "timestamp_sec": 4.467,
+    "timestamp_sec": 190.506,
     "detections": []
   },
   {
     "frame_index": 135,
-    "timestamp_sec": 4.5,
+    "timestamp_sec": 192.27,
     "detections": []
   },
   {
     "frame_index": 136,
-    "timestamp_sec": 4.533,
+    "timestamp_sec": 194.114,
     "detections": []
   },
   {
     "frame_index": 137,
-    "timestamp_sec": 4.567,
+    "timestamp_sec": 196.766,
     "detections": []
   },
   {
     "frame_index": 138,
-    "timestamp_sec": 4.6,
+    "timestamp_sec": 199.559,
     "detections": []
   },
   {
     "frame_index": 139,
-    "timestamp_sec": 4.633,
+    "timestamp_sec": 201.215,
     "detections": []
   },
   {
     "frame_index": 140,
-    "timestamp_sec": 4.667,
+    "timestamp_sec": 203.065,
     "detections": []
   },
   {
     "frame_index": 141,
-    "timestamp_sec": 4.7,
+    "timestamp_sec": 204.876,
     "detections": []
   },
   {
     "frame_index": 142,
-    "timestamp_sec": 4.733,
+    "timestamp_sec": 206.696,
     "detections": []
   },
   {
     "frame_index": 143,
-    "timestamp_sec": 4.767,
+    "timestamp_sec": 208.545,
     "detections": []
   },
   {
     "frame_index": 144,
-    "timestamp_sec": 4.8,
-    "detections": [
-      {
-        "class_name": "Animal",
-        "confidence": 0.15285325050354004,
-        "x1": 200.45716857910156,
-        "y1": 319.1517639160156,
-        "x2": 383.0798645019531,
-        "y2": 511.43023681640625,
-        "zone": "CENTER",
-        "area_fraction": 0.0563
-      }
-    ]
+    "timestamp_sec": 210.454,
+    "detections": []
   },
   {
     "frame_index": 145,
-    "timestamp_sec": 4.833,
+    "timestamp_sec": 212.247,
     "detections": []
   },
   {
     "frame_index": 146,
-    "timestamp_sec": 4.867,
+    "timestamp_sec": 214.26,
     "detections": []
   },
   {
     "frame_index": 147,
-    "timestamp_sec": 4.9,
-    "detections": [
-      {
-        "class_name": "Animal",
-        "confidence": 0.1404930204153061,
-        "x1": 199.6310577392578,
-        "y1": 318.6812744140625,
-        "x2": 377.60137939453125,
-        "y2": 454.54925537109375,
-        "zone": "CENTER",
-        "area_fraction": 0.0388
-      }
-    ]
+    "timestamp_sec": 216.44,
+    "detections": []
   },
   {
     "frame_index": 148,
-    "timestamp_sec": 4.933,
-    "detections": [
-      {
-        "class_name": "Animal",
-        "confidence": 0.12775376439094543,
-        "x1": 199.0915985107422,
-        "y1": 317.9783020019531,
-        "x2": 378.3598327636719,
-        "y2": 457.0152893066406,
-        "zone": "CENTER",
-        "area_fraction": 0.04
-      }
-    ]
+    "timestamp_sec": 218.424,
+    "detections": []
   },
   {
     "frame_index": 149,
-    "timestamp_sec": 4.967,
-    "detections": [
-      {
-        "class_name": "Animal",
-        "confidence": 0.16657912731170654,
-        "x1": 198.32376098632812,
-        "y1": 317.98406982421875,
-        "x2": 382.6722717285156,
-        "y2": 458.0960693359375,
-        "zone": "CENTER",
-        "area_fraction": 0.0414
-      }
-    ]
+    "timestamp_sec": 220.456,
+    "detections": []
   },
   {
     "frame_index": 150,
-    "timestamp_sec": 5.0,
-    "detections": [
-      {
-        "class_name": "Animal",
-        "confidence": 0.21456892788410187,
-        "x1": 197.09791564941406,
-        "y1": 318.066650390625,
-        "x2": 382.6491394042969,
-        "y2": 454.74896240234375,
-        "zone": "CENTER",
-        "area_fraction": 0.0407
-      },
-      {
-        "class_name": "Cat",
-        "confidence": 0.182498499751091,
-        "x1": 197.53627014160156,
-        "y1": 317.7147216796875,
-        "x2": 382.8935241699219,
-        "y2": 449.40576171875,
-        "zone": "CENTER",
-        "area_fraction": 0.0392
-      }
-    ]
+    "timestamp_sec": 223.115,
+    "detections": []
   },
   {
     "frame_index": 151,
-    "timestamp_sec": 5.033,
-    "detections": [
-      {
-        "class_name": "Cat",
-        "confidence": 0.1754303127527237,
-        "x1": 196.24632263183594,
-        "y1": 317.4073791503906,
-        "x2": 382.1939392089844,
-        "y2": 454.6469421386719,
-        "zone": "CENTER",
-        "area_fraction": 0.0409
-      },
-      {
-        "class_name": "Animal",
-        "confidence": 0.16490957140922546,
-        "x1": 197.54994201660156,
-        "y1": 318.1202392578125,
-        "x2": 381.97833251953125,
-        "y2": 452.7933349609375,
-        "zone": "CENTER",
-        "area_fraction": 0.0398
-      }
-    ]
+    "timestamp_sec": 225.303,
+    "detections": []
   },
   {
     "frame_index": 152,
-    "timestamp_sec": 5.067,
-    "detections": [
-      {
-        "class_name": "Cat",
-        "confidence": 0.304065078496933,
-        "x1": 196.34056091308594,
-        "y1": 317.76824951171875,
-        "x2": 383.73492431640625,
-        "y2": 454.4461669921875,
-        "zone": "CENTER",
-        "area_fraction": 0.0411
-      },
-      {
-        "class_name": "Animal",
-        "confidence": 0.162109375,
-        "x1": 197.4369354248047,
-        "y1": 318.0989685058594,
-        "x2": 385.02203369140625,
-        "y2": 453.9342956542969,
-        "zone": "CENTER",
-        "area_fraction": 0.0409
-      }
-    ]
+    "timestamp_sec": 228.143,
+    "detections": []
   },
   {
     "frame_index": 153,
-    "timestamp_sec": 5.1,
-    "detections": [
-      {
-        "class_name": "Animal",
-        "confidence": 0.2518925666809082,
-        "x1": 197.10977172851562,
-        "y1": 317.6179504394531,
-        "x2": 387.60009765625,
-        "y2": 449.8043212890625,
-        "zone": "CENTER",
-        "area_fraction": 0.0404
-      }
-    ]
+    "timestamp_sec": 230.182,
+    "detections": []
   },
   {
     "frame_index": 154,
-    "timestamp_sec": 5.133,
-    "detections": [
-      {
-        "class_name": "Animal",
-        "confidence": 0.2247268110513687,
-        "x1": 196.83734130859375,
-        "y1": 317.81524658203125,
-        "x2": 386.958984375,
-        "y2": 451.1996154785156,
-        "zone": "CENTER",
-        "area_fraction": 0.0407
-      },
-      {
-        "class_name": "Cat",
-        "confidence": 0.14950469136238098,
-        "x1": 196.7189178466797,
-        "y1": 317.21295166015625,
-        "x2": 386.5810241699219,
-        "y2": 449.1758728027344,
-        "zone": "CENTER",
-        "area_fraction": 0.0402
-      }
-    ]
+    "timestamp_sec": 232.228,
+    "detections": []
   },
   {
     "frame_index": 155,
-    "timestamp_sec": 5.167,
-    "detections": [
-      {
-        "class_name": "Animal",
-        "confidence": 0.23629620671272278,
-        "x1": 196.66448974609375,
-        "y1": 317.7598571777344,
-        "x2": 388.51226806640625,
-        "y2": 454.2862548828125,
-        "zone": "CENTER",
-        "area_fraction": 0.042
-      }
-    ]
+    "timestamp_sec": 234.161,
+    "detections": []
   },
   {
     "frame_index": 156,
-    "timestamp_sec": 5.2,
-    "detections": [
-      {
-        "class_name": "Animal",
-        "confidence": 0.2184501439332962,
-        "x1": 196.16783142089844,
-        "y1": 317.359619140625,
-        "x2": 389.92755126953125,
-        "y2": 453.0527038574219,
-        "zone": "CENTER",
-        "area_fraction": 0.0422
-      }
-    ]
+    "timestamp_sec": 236.03,
+    "detections": []
   },
   {
     "frame_index": 157,
-    "timestamp_sec": 5.233,
-    "detections": [
-      {
-        "class_name": "Animal",
-        "confidence": 0.16833840310573578,
-        "x1": 195.96588134765625,
-        "y1": 318.27923583984375,
-        "x2": 391.3299560546875,
-        "y2": 451.7228088378906,
-        "zone": "CENTER",
-        "area_fraction": 0.0418
-      }
-    ]
+    "timestamp_sec": 237.959,
+    "detections": []
   },
   {
     "frame_index": 158,
-    "timestamp_sec": 5.267,
-    "detections": [
-      {
-        "class_name": "Animal",
-        "confidence": 0.21951082348823547,
-        "x1": 195.81846618652344,
-        "y1": 319.20928955078125,
-        "x2": 390.84967041015625,
-        "y2": 450.4744873046875,
-        "zone": "CENTER",
-        "area_fraction": 0.0411
-      }
-    ]
+    "timestamp_sec": 239.809,
+    "detections": []
   },
   {
     "frame_index": 159,
-    "timestamp_sec": 5.3,
-    "detections": [
-      {
-        "class_name": "Animal",
-        "confidence": 0.19725924730300903,
-        "x1": 194.85792541503906,
-        "y1": 319.67779541015625,
-        "x2": 395.2173156738281,
-        "y2": 447.5083312988281,
-        "zone": "CENTER",
-        "area_fraction": 0.0411
-      }
-    ]
+    "timestamp_sec": 241.826,
+    "detections": []
   },
   {
     "frame_index": 160,
-    "timestamp_sec": 5.333,
-    "detections": [
-      {
-        "class_name": "Animal",
-        "confidence": 0.17682868242263794,
-        "x1": 195.27020263671875,
-        "y1": 320.2196960449219,
-        "x2": 394.72021484375,
-        "y2": 443.2018127441406,
-        "zone": "CENTER",
-        "area_fraction": 0.0394
-      }
-    ]
+    "timestamp_sec": 243.74,
+    "detections": []
   },
   {
     "frame_index": 161,
-    "timestamp_sec": 5.367,
-    "detections": [
-      {
-        "class_name": "Animal",
-        "confidence": 0.22097042202949524,
-        "x1": 195.91619873046875,
-        "y1": 320.8711242675781,
-        "x2": 393.4895324707031,
-        "y2": 443.21484375,
-        "zone": "CENTER",
-        "area_fraction": 0.0388
-      }
-    ]
+    "timestamp_sec": 245.692,
+    "detections": []
   },
   {
     "frame_index": 162,
-    "timestamp_sec": 5.4,
-    "detections": [
-      {
-        "class_name": "Animal",
-        "confidence": 0.15046252310276031,
-        "x1": 195.52972412109375,
-        "y1": 318.9903869628906,
-        "x2": 393.0065612792969,
-        "y2": 443.4048767089844,
-        "zone": "CENTER",
-        "area_fraction": 0.0394
-      }
-    ]
+    "timestamp_sec": 247.596,
+    "detections": []
   },
   {
     "frame_index": 163,
-    "timestamp_sec": 5.433,
-    "detections": [
-      {
-        "class_name": "Animal",
-        "confidence": 0.1653398722410202,
-        "x1": 196.2633819580078,
-        "y1": 318.7377624511719,
-        "x2": 393.33941650390625,
-        "y2": 443.4461364746094,
-        "zone": "CENTER",
-        "area_fraction": 0.0394
-      }
-    ]
+    "timestamp_sec": 249.142,
+    "detections": []
   },
   {
     "frame_index": 164,
-    "timestamp_sec": 5.467,
+    "timestamp_sec": 251.059,
     "detections": []
   },
   {
     "frame_index": 165,
-    "timestamp_sec": 5.5,
+    "timestamp_sec": 252.606,
     "detections": []
   },
   {
     "frame_index": 166,
-    "timestamp_sec": 5.533,
-    "detections": [
-      {
-        "class_name": "Animal",
-        "confidence": 0.12263183295726776,
-        "x1": 194.20623779296875,
-        "y1": 317.8943176269531,
-        "x2": 396.38018798828125,
-        "y2": 445.265380859375,
-        "zone": "CENTER",
-        "area_fraction": 0.0413
-      }
-    ]
+    "timestamp_sec": 254.244,
+    "detections": []
   },
   {
     "frame_index": 167,
-    "timestamp_sec": 5.567,
-    "detections": [
-      {
-        "class_name": "Animal",
-        "confidence": 0.15235525369644165,
-        "x1": 193.3152618408203,
-        "y1": 318.1121826171875,
-        "x2": 396.4107360839844,
-        "y2": 444.9271240234375,
-        "zone": "CENTER",
-        "area_fraction": 0.0413
-      }
-    ]
+    "timestamp_sec": 255.849,
+    "detections": []
   },
   {
     "frame_index": 168,
-    "timestamp_sec": 5.6,
+    "timestamp_sec": 257.686,
     "detections": []
   },
   {
     "frame_index": 169,
-    "timestamp_sec": 5.633,
+    "timestamp_sec": 259.415,
     "detections": []
   },
   {
     "frame_index": 170,
-    "timestamp_sec": 5.667,
+    "timestamp_sec": 260.995,
     "detections": []
   },
   {
     "frame_index": 171,
-    "timestamp_sec": 5.7,
-    "detections": [
-      {
-        "class_name": "Animal",
-        "confidence": 0.1521521508693695,
-        "x1": 192.42105102539062,
-        "y1": 317.224365234375,
-        "x2": 396.35797119140625,
-        "y2": 443.2388000488281,
-        "zone": "CENTER",
-        "area_fraction": 0.0412
-      }
-    ]
+    "timestamp_sec": 263.076,
+    "detections": []
   },
   {
     "frame_index": 172,
-    "timestamp_sec": 5.733,
-    "detections": [
-      {
-        "class_name": "Animal",
-        "confidence": 0.17678481340408325,
-        "x1": 191.44894409179688,
-        "y1": 317.5965576171875,
-        "x2": 397.0024108886719,
-        "y2": 444.88824462890625,
-        "zone": "CENTER",
-        "area_fraction": 0.042
-      }
-    ]
+    "timestamp_sec": 264.74,
+    "detections": []
   },
   {
     "frame_index": 173,
-    "timestamp_sec": 5.767,
-    "detections": [
-      {
-        "class_name": "Animal",
-        "confidence": 0.1291874647140503,
-        "x1": 191.5265350341797,
-        "y1": 317.44586181640625,
-        "x2": 396.1017761230469,
-        "y2": 447.261474609375,
-        "zone": "CENTER",
-        "area_fraction": 0.0426
-      }
-    ]
+    "timestamp_sec": 266.337,
+    "detections": []
   },
   {
     "frame_index": 174,
-    "timestamp_sec": 5.8,
+    "timestamp_sec": 267.665,
     "detections": []
   },
   {
     "frame_index": 175,
-    "timestamp_sec": 5.833,
+    "timestamp_sec": 269.083,
     "detections": []
   },
   {
     "frame_index": 176,
-    "timestamp_sec": 5.867,
+    "timestamp_sec": 270.967,
     "detections": []
   },
   {
     "frame_index": 177,
-    "timestamp_sec": 5.9,
+    "timestamp_sec": 272.843,
     "detections": []
   },
   {
     "frame_index": 178,
-    "timestamp_sec": 5.933,
+    "timestamp_sec": 274.191,
     "detections": []
   },
   {
     "frame_index": 179,
-    "timestamp_sec": 5.967,
+    "timestamp_sec": 277.356,
     "detections": []
   },
   {
     "frame_index": 180,
-    "timestamp_sec": 6.0,
+    "timestamp_sec": 279.655,
     "detections": []
   },
   {
     "frame_index": 181,
-    "timestamp_sec": 6.033,
+    "timestamp_sec": 281.43,
     "detections": []
   },
   {
     "frame_index": 182,
-    "timestamp_sec": 6.067,
+    "timestamp_sec": 283.452,
     "detections": []
   },
   {
     "frame_index": 183,
-    "timestamp_sec": 6.1,
+    "timestamp_sec": 285.323,
     "detections": []
   },
   {
     "frame_index": 184,
-    "timestamp_sec": 6.133,
+    "timestamp_sec": 289.208,
     "detections": []
   },
   {
     "frame_index": 185,
-    "timestamp_sec": 6.167,
+    "timestamp_sec": 292.162,
     "detections": []
   },
   {
     "frame_index": 186,
-    "timestamp_sec": 6.2,
+    "timestamp_sec": 294.489,
     "detections": []
   },
   {
     "frame_index": 187,
-    "timestamp_sec": 6.233,
+    "timestamp_sec": 296.491,
     "detections": []
   },
   {
     "frame_index": 188,
-    "timestamp_sec": 6.267,
+    "timestamp_sec": 298.575,
     "detections": []
   },
   {
     "frame_index": 189,
-    "timestamp_sec": 6.3,
+    "timestamp_sec": 300.251,
     "detections": []
   },
   {
     "frame_index": 190,
-    "timestamp_sec": 6.333,
+    "timestamp_sec": 301.7,
     "detections": []
   },
   {
     "frame_index": 191,
-    "timestamp_sec": 6.367,
+    "timestamp_sec": 303.511,
     "detections": []
   },
   {
     "frame_index": 192,
-    "timestamp_sec": 6.4,
+    "timestamp_sec": 305.185,
     "detections": []
   },
   {
     "frame_index": 193,
-    "timestamp_sec": 6.433,
+    "timestamp_sec": 306.835,
     "detections": []
   },
   {
     "frame_index": 194,
-    "timestamp_sec": 6.467,
+    "timestamp_sec": 308.424,
     "detections": []
   },
   {
     "frame_index": 195,
-    "timestamp_sec": 6.5,
+    "timestamp_sec": 310.285,
     "detections": []
   },
   {
     "frame_index": 196,
-    "timestamp_sec": 6.533,
+    "timestamp_sec": 311.968,
     "detections": []
   },
   {
     "frame_index": 197,
-    "timestamp_sec": 6.567,
+    "timestamp_sec": 313.52,
     "detections": []
   },
   {
     "frame_index": 198,
-    "timestamp_sec": 6.6,
+    "timestamp_sec": 315.526,
     "detections": []
   },
   {
     "frame_index": 199,
-    "timestamp_sec": 6.633,
+    "timestamp_sec": 317.37,
     "detections": []
   },
   {
     "frame_index": 200,
-    "timestamp_sec": 6.667,
+    "timestamp_sec": 319.48,
     "detections": []
   },
   {
     "frame_index": 201,
-    "timestamp_sec": 6.7,
+    "timestamp_sec": 321.234,
     "detections": []
   },
   {
     "frame_index": 202,
-    "timestamp_sec": 6.733,
+    "timestamp_sec": 323.374,
     "detections": []
   },
   {
     "frame_index": 203,
-    "timestamp_sec": 6.767,
+    "timestamp_sec": 332.053,
     "detections": []
   },
   {
     "frame_index": 204,
-    "timestamp_sec": 6.8,
+    "timestamp_sec": 333.028,
     "detections": []
   },
   {
     "frame_index": 205,
-    "timestamp_sec": 6.833,
+    "timestamp_sec": 333.969,
     "detections": []
   },
   {
     "frame_index": 206,
-    "timestamp_sec": 6.867,
+    "timestamp_sec": 334.799,
     "detections": []
   },
   {
     "frame_index": 207,
-    "timestamp_sec": 6.9,
+    "timestamp_sec": 335.825,
     "detections": []
   },
   {
     "frame_index": 208,
-    "timestamp_sec": 6.933,
+    "timestamp_sec": 336.785,
     "detections": []
   },
   {
     "frame_index": 209,
-    "timestamp_sec": 6.967,
+    "timestamp_sec": 337.861,
     "detections": []
   },
   {
     "frame_index": 210,
-    "timestamp_sec": 7.0,
+    "timestamp_sec": 338.917,
     "detections": []
   },
   {
     "frame_index": 211,
-    "timestamp_sec": 7.033,
+    "timestamp_sec": 339.904,
     "detections": []
   },
   {
     "frame_index": 212,
-    "timestamp_sec": 7.067,
+    "timestamp_sec": 340.829,
     "detections": []
   },
   {
     "frame_index": 213,
-    "timestamp_sec": 7.1,
+    "timestamp_sec": 341.799,
     "detections": []
   },
   {
     "frame_index": 214,
-    "timestamp_sec": 7.133,
+    "timestamp_sec": 342.998,
     "detections": []
   },
   {
     "frame_index": 215,
-    "timestamp_sec": 7.167,
+    "timestamp_sec": 343.815,
     "detections": []
   },
   {
     "frame_index": 216,
-    "timestamp_sec": 7.2,
+    "timestamp_sec": 344.879,
     "detections": []
   },
   {
     "frame_index": 217,
-    "timestamp_sec": 7.233,
+    "timestamp_sec": 345.847,
     "detections": []
   },
   {
     "frame_index": 218,
-    "timestamp_sec": 7.267,
+    "timestamp_sec": 346.845,
     "detections": []
   },
   {
     "frame_index": 219,
-    "timestamp_sec": 7.3,
+    "timestamp_sec": 347.791,
     "detections": []
   },
   {
     "frame_index": 220,
-    "timestamp_sec": 7.333,
+    "timestamp_sec": 348.827,
     "detections": []
   },
   {
     "frame_index": 221,
-    "timestamp_sec": 7.367,
+    "timestamp_sec": 349.86,
     "detections": []
   },
   {
     "frame_index": 222,
-    "timestamp_sec": 7.4,
+    "timestamp_sec": 350.849,
     "detections": []
   },
   {
     "frame_index": 223,
-    "timestamp_sec": 7.433,
+    "timestamp_sec": 351.891,
     "detections": []
   },
   {
     "frame_index": 224,
-    "timestamp_sec": 7.467,
+    "timestamp_sec": 352.901,
     "detections": []
   },
   {
     "frame_index": 225,
-    "timestamp_sec": 7.5,
+    "timestamp_sec": 353.939,
     "detections": []
   },
   {
     "frame_index": 226,
-    "timestamp_sec": 7.533,
+    "timestamp_sec": 354.904,
     "detections": []
   },
   {
     "frame_index": 227,
-    "timestamp_sec": 7.567,
+    "timestamp_sec": 355.901,
     "detections": []
   },
   {
     "frame_index": 228,
-    "timestamp_sec": 7.6,
+    "timestamp_sec": 356.936,
     "detections": []
   },
   {
     "frame_index": 229,
-    "timestamp_sec": 7.633,
+    "timestamp_sec": 357.862,
     "detections": []
   },
   {
     "frame_index": 230,
-    "timestamp_sec": 7.667,
+    "timestamp_sec": 358.806,
     "detections": []
   },
   {
     "frame_index": 231,
-    "timestamp_sec": 7.7,
+    "timestamp_sec": 359.83,
     "detections": []
   },
   {
     "frame_index": 232,
-    "timestamp_sec": 7.733,
+    "timestamp_sec": 360.849,
     "detections": []
   },
   {
     "frame_index": 233,
-    "timestamp_sec": 7.767,
+    "timestamp_sec": 361.778,
     "detections": []
   },
   {
     "frame_index": 234,
-    "timestamp_sec": 7.8,
+    "timestamp_sec": 362.842,
     "detections": []
   },
   {
     "frame_index": 235,
-    "timestamp_sec": 7.833,
+    "timestamp_sec": 363.934,
     "detections": []
   },
   {
     "frame_index": 236,
-    "timestamp_sec": 7.867,
+    "timestamp_sec": 364.791,
     "detections": []
   },
   {
     "frame_index": 237,
-    "timestamp_sec": 7.9,
+    "timestamp_sec": 365.876,
     "detections": []
   },
   {
     "frame_index": 238,
-    "timestamp_sec": 7.933,
+    "timestamp_sec": 366.783,
     "detections": []
   },
   {
     "frame_index": 239,
-    "timestamp_sec": 7.967,
+    "timestamp_sec": 367.92,
     "detections": []
   },
   {
     "frame_index": 240,
-    "timestamp_sec": 8.0,
+    "timestamp_sec": 368.794,
     "detections": []
   },
   {
     "frame_index": 241,
-    "timestamp_sec": 8.033,
+    "timestamp_sec": 369.898,
     "detections": []
   },
   {
     "frame_index": 242,
-    "timestamp_sec": 8.067,
+    "timestamp_sec": 370.733,
     "detections": []
   },
   {
     "frame_index": 243,
-    "timestamp_sec": 8.1,
+    "timestamp_sec": 371.771,
     "detections": []
   },
   {
     "frame_index": 244,
-    "timestamp_sec": 8.133,
+    "timestamp_sec": 372.689,
     "detections": []
   },
   {
     "frame_index": 245,
-    "timestamp_sec": 8.167,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.4345252811908722,
-        "x1": 0.8519726991653442,
-        "y1": 224.20956420898438,
-        "x2": 263.67816162109375,
-        "y2": 364.03778076171875,
-        "zone": "LEFT",
-        "area_fraction": 0.059
-      }
-    ]
+    "timestamp_sec": 373.778,
+    "detections": []
   },
   {
     "frame_index": 246,
-    "timestamp_sec": 8.2,
+    "timestamp_sec": 374.787,
     "detections": []
   },
   {
     "frame_index": 247,
-    "timestamp_sec": 8.233,
+    "timestamp_sec": 375.791,
     "detections": []
   },
   {
     "frame_index": 248,
-    "timestamp_sec": 8.267,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.3544902205467224,
-        "x1": 0.3625197410583496,
-        "y1": 232.56317138671875,
-        "x2": 283.3258361816406,
-        "y2": 373.36724853515625,
-        "zone": "LEFT",
-        "area_fraction": 0.0639
-      }
-    ]
+    "timestamp_sec": 376.777,
+    "detections": []
   },
   {
     "frame_index": 249,
-    "timestamp_sec": 8.3,
+    "timestamp_sec": 377.878,
     "detections": []
   },
   {
     "frame_index": 250,
-    "timestamp_sec": 8.333,
+    "timestamp_sec": 378.933,
     "detections": []
   },
   {
     "frame_index": 251,
-    "timestamp_sec": 8.367,
+    "timestamp_sec": 379.745,
     "detections": []
   },
   {
     "frame_index": 252,
-    "timestamp_sec": 8.4,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.5440685749053955,
-        "x1": 1.1343529224395752,
-        "y1": 235.22616577148438,
-        "x2": 264.3418884277344,
-        "y2": 381.95538330078125,
-        "zone": "LEFT",
-        "area_fraction": 0.062
-      }
-    ]
+    "timestamp_sec": 380.918,
+    "detections": []
   },
   {
     "frame_index": 253,
-    "timestamp_sec": 8.433,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.44333961606025696,
-        "x1": 0.32338446378707886,
-        "y1": 236.1018524169922,
-        "x2": 259.7289123535156,
-        "y2": 384.435302734375,
-        "zone": "LEFT",
-        "area_fraction": 0.0617
-      }
-    ]
+    "timestamp_sec": 381.845,
+    "detections": []
   },
   {
     "frame_index": 254,
-    "timestamp_sec": 8.467,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.7237112522125244,
-        "x1": 0.1394464522600174,
-        "y1": 235.64627075195312,
-        "x2": 261.6778564453125,
-        "y2": 386.88714599609375,
-        "zone": "LEFT",
-        "area_fraction": 0.0635
-      }
-    ]
+    "timestamp_sec": 382.866,
+    "detections": []
   },
   {
     "frame_index": 255,
-    "timestamp_sec": 8.5,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.7246745824813843,
-        "x1": 0.12073354423046112,
-        "y1": 235.6111602783203,
-        "x2": 261.8704833984375,
-        "y2": 386.5514831542969,
-        "zone": "LEFT",
-        "area_fraction": 0.0634
-      }
-    ]
+    "timestamp_sec": 383.803,
+    "detections": []
   },
   {
     "frame_index": 256,
-    "timestamp_sec": 8.533,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.7677974700927734,
-        "x1": 0.07334728538990021,
-        "y1": 233.10409545898438,
-        "x2": 262.0168762207031,
-        "y2": 393.0886535644531,
-        "zone": "LEFT",
-        "area_fraction": 0.0672
-      }
-    ]
+    "timestamp_sec": 384.899,
+    "detections": []
   },
   {
     "frame_index": 257,
-    "timestamp_sec": 8.567,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.7700729370117188,
-        "x1": 0.48124751448631287,
-        "y1": 231.70407104492188,
-        "x2": 261.6819152832031,
-        "y2": 391.4305114746094,
-        "zone": "LEFT",
-        "area_fraction": 0.0669
-      }
-    ]
+    "timestamp_sec": 385.919,
+    "detections": []
   },
   {
     "frame_index": 258,
-    "timestamp_sec": 8.6,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.7210873365402222,
-        "x1": 0.383124440908432,
-        "y1": 228.43014526367188,
-        "x2": 259.6988830566406,
-        "y2": 394.84906005859375,
-        "zone": "LEFT",
-        "area_fraction": 0.0692
-      }
-    ]
+    "timestamp_sec": 386.903,
+    "detections": []
   },
   {
     "frame_index": 259,
-    "timestamp_sec": 8.633,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.797626256942749,
-        "x1": 0.29890498518943787,
-        "y1": 228.139404296875,
-        "x2": 259.2953186035156,
-        "y2": 395.82794189453125,
-        "zone": "LEFT",
-        "area_fraction": 0.0697
-      }
-    ]
+    "timestamp_sec": 387.875,
+    "detections": []
   },
   {
     "frame_index": 260,
-    "timestamp_sec": 8.667,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.7809995412826538,
-        "x1": 0.6554757952690125,
-        "y1": 223.82144165039062,
-        "x2": 255.76429748535156,
-        "y2": 391.9034118652344,
-        "zone": "LEFT",
-        "area_fraction": 0.0688
-      }
-    ]
+    "timestamp_sec": 388.845,
+    "detections": []
   },
   {
     "frame_index": 261,
-    "timestamp_sec": 8.7,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.6008330583572388,
-        "x1": 0.676217257976532,
-        "y1": 222.8227081298828,
-        "x2": 254.82249450683594,
-        "y2": 393.4531555175781,
-        "zone": "LEFT",
-        "area_fraction": 0.0696
-      },
-      {
-        "class_name": "Dog",
-        "confidence": 0.35408836603164673,
-        "x1": 0.7703971862792969,
-        "y1": 222.53692626953125,
-        "x2": 255.25296020507812,
-        "y2": 393.33135986328125,
-        "zone": "LEFT",
-        "area_fraction": 0.0697
-      }
-    ]
+    "timestamp_sec": 389.794,
+    "detections": []
   },
   {
     "frame_index": 262,
-    "timestamp_sec": 8.733,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.5723741054534912,
-        "x1": 0.7072154879570007,
-        "y1": 222.8451385498047,
-        "x2": 254.48292541503906,
-        "y2": 393.3618469238281,
-        "zone": "LEFT",
-        "area_fraction": 0.0694
-      },
-      {
-        "class_name": "Dog",
-        "confidence": 0.35043224692344666,
-        "x1": 0.7728132009506226,
-        "y1": 222.7071075439453,
-        "x2": 254.84469604492188,
-        "y2": 393.1586608886719,
-        "zone": "LEFT",
-        "area_fraction": 0.0695
-      }
-    ]
+    "timestamp_sec": 390.895,
+    "detections": []
   },
   {
     "frame_index": 263,
-    "timestamp_sec": 8.767,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.892170786857605,
-        "x1": 0.5628002285957336,
-        "y1": 221.60789489746094,
-        "x2": 251.98814392089844,
-        "y2": 396.56036376953125,
-        "zone": "LEFT",
-        "area_fraction": 0.0706
-      }
-    ]
+    "timestamp_sec": 391.879,
+    "detections": []
   },
   {
     "frame_index": 264,
-    "timestamp_sec": 8.8,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.8830092549324036,
-        "x1": 0.5668573379516602,
-        "y1": 221.5159912109375,
-        "x2": 252.17630004882812,
-        "y2": 396.434326171875,
-        "zone": "LEFT",
-        "area_fraction": 0.0706
-      }
-    ]
+    "timestamp_sec": 392.907,
+    "detections": []
   },
   {
     "frame_index": 265,
-    "timestamp_sec": 8.833,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.7740523815155029,
-        "x1": 1.0540082454681396,
-        "y1": 220.3807830810547,
-        "x2": 245.27017211914062,
-        "y2": 397.6652526855469,
-        "zone": "LEFT",
-        "area_fraction": 0.0695
-      }
-    ]
+    "timestamp_sec": 393.804,
+    "detections": []
   },
   {
     "frame_index": 266,
-    "timestamp_sec": 8.867,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.6815313696861267,
-        "x1": 0.9538337588310242,
-        "y1": 219.71868896484375,
-        "x2": 236.3568115234375,
-        "y2": 401.01348876953125,
-        "zone": "LEFT",
-        "area_fraction": 0.0685
-      }
-    ]
+    "timestamp_sec": 395.204,
+    "detections": []
   },
   {
     "frame_index": 267,
-    "timestamp_sec": 8.9,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.6334459185600281,
-        "x1": 0.9183225631713867,
-        "y1": 219.30755615234375,
-        "x2": 240.40367126464844,
-        "y2": 402.4281005859375,
-        "zone": "LEFT",
-        "area_fraction": 0.0704
-      }
-    ]
+    "timestamp_sec": 396.048,
+    "detections": []
   },
   {
     "frame_index": 268,
-    "timestamp_sec": 8.933,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.6494898200035095,
-        "x1": 0.9270977973937988,
-        "y1": 219.309326171875,
-        "x2": 240.34840393066406,
-        "y2": 402.3548889160156,
-        "zone": "LEFT",
-        "area_fraction": 0.0703
-      }
-    ]
+    "timestamp_sec": 396.83,
+    "detections": []
   },
   {
     "frame_index": 269,
-    "timestamp_sec": 8.967,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.7576327919960022,
-        "x1": 0.5039947628974915,
-        "y1": 217.88819885253906,
-        "x2": 236.74752807617188,
-        "y2": 400.554931640625,
-        "zone": "LEFT",
-        "area_fraction": 0.0692
-      }
-    ]
+    "timestamp_sec": 397.905,
+    "detections": []
   },
   {
     "frame_index": 270,
-    "timestamp_sec": 9.0,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.6196784973144531,
-        "x1": 0.48384588956832886,
-        "y1": 215.66671752929688,
-        "x2": 238.72361755371094,
-        "y2": 406.0333251953125,
-        "zone": "LEFT",
-        "area_fraction": 0.0728
-      }
-    ]
+    "timestamp_sec": 399.117,
+    "detections": []
   },
   {
     "frame_index": 271,
-    "timestamp_sec": 9.033,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.8082852959632874,
-        "x1": 0.4563121795654297,
-        "y1": 217.70120239257812,
-        "x2": 235.0874786376953,
-        "y2": 404.4721984863281,
-        "zone": "LEFT",
-        "area_fraction": 0.0703
-      }
-    ]
+    "timestamp_sec": 400.014,
+    "detections": []
   },
   {
     "frame_index": 272,
-    "timestamp_sec": 9.067,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.6379621624946594,
-        "x1": 0.49779510498046875,
-        "y1": 217.04454040527344,
-        "x2": 235.26881408691406,
-        "y2": 406.8963623046875,
-        "zone": "LEFT",
-        "area_fraction": 0.0715
-      }
-    ]
+    "timestamp_sec": 400.776,
+    "detections": []
   },
   {
     "frame_index": 273,
-    "timestamp_sec": 9.1,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.64765465259552,
-        "x1": 0.5071857571601868,
-        "y1": 216.44090270996094,
-        "x2": 237.88711547851562,
-        "y2": 408.9642639160156,
-        "zone": "LEFT",
-        "area_fraction": 0.0733
-      }
-    ]
+    "timestamp_sec": 401.886,
+    "detections": []
   },
   {
     "frame_index": 274,
-    "timestamp_sec": 9.133,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.6073595881462097,
-        "x1": 1.1085058450698853,
-        "y1": 215.48971557617188,
-        "x2": 232.9297332763672,
-        "y2": 414.7073974609375,
-        "zone": "LEFT",
-        "area_fraction": 0.0741
-      },
-      {
-        "class_name": "Cat",
-        "confidence": 0.44096195697784424,
-        "x1": 0.6702455282211304,
-        "y1": 215.5870361328125,
-        "x2": 232.7970733642578,
-        "y2": 414.73260498046875,
-        "zone": "LEFT",
-        "area_fraction": 0.0742
-      }
-    ]
+    "timestamp_sec": 402.793,
+    "detections": []
   },
   {
     "frame_index": 275,
-    "timestamp_sec": 9.167,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.622552752494812,
-        "x1": 0.7343389391899109,
-        "y1": 212.48684692382812,
-        "x2": 234.07943725585938,
-        "y2": 418.20196533203125,
-        "zone": "LEFT",
-        "area_fraction": 0.077
-      }
-    ]
+    "timestamp_sec": 403.827,
+    "detections": []
   },
   {
     "frame_index": 276,
-    "timestamp_sec": 9.2,
-    "detections": [
-      {
-        "class_name": "Cat",
-        "confidence": 0.5601521134376526,
-        "x1": 0.8201538920402527,
-        "y1": 213.35415649414062,
-        "x2": 235.53558349609375,
-        "y2": 417.4808654785156,
-        "zone": "LEFT",
-        "area_fraction": 0.0769
-      },
-      {
-        "class_name": "Tiger",
-        "confidence": 0.5038432478904724,
-        "x1": 1.0521163940429688,
-        "y1": 213.68019104003906,
-        "x2": 235.2035675048828,
-        "y2": 418.05517578125,
-        "zone": "LEFT",
-        "area_fraction": 0.0768
-      }
-    ]
+    "timestamp_sec": 404.756,
+    "detections": []
   },
   {
     "frame_index": 277,
-    "timestamp_sec": 9.233,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.7032778859138489,
-        "x1": 0.6459028124809265,
-        "y1": 214.37937927246094,
-        "x2": 237.350341796875,
-        "y2": 417.5338134765625,
-        "zone": "LEFT",
-        "area_fraction": 0.0771
-      }
-    ]
+    "timestamp_sec": 405.735,
+    "detections": []
   },
   {
     "frame_index": 278,
-    "timestamp_sec": 9.267,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.7089323401451111,
-        "x1": 0.7179964780807495,
-        "y1": 214.2790985107422,
-        "x2": 239.5241241455078,
-        "y2": 422.8199462890625,
-        "zone": "LEFT",
-        "area_fraction": 0.0799
-      }
-    ]
+    "timestamp_sec": 406.922,
+    "detections": []
   },
   {
     "frame_index": 279,
-    "timestamp_sec": 9.3,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.890820324420929,
-        "x1": 1.032013177871704,
-        "y1": 214.07460021972656,
-        "x2": 237.00650024414062,
-        "y2": 437.5316162109375,
-        "zone": "LEFT",
-        "area_fraction": 0.0846
-      }
-    ]
+    "timestamp_sec": 408.127,
+    "detections": []
   },
   {
     "frame_index": 280,
-    "timestamp_sec": 9.333,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.8821908235549927,
-        "x1": 1.041540503501892,
-        "y1": 213.91549682617188,
-        "x2": 236.92063903808594,
-        "y2": 437.406005859375,
-        "zone": "LEFT",
-        "area_fraction": 0.0846
-      }
-    ]
+    "timestamp_sec": 408.878,
+    "detections": []
   },
   {
     "frame_index": 281,
-    "timestamp_sec": 9.367,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.7843563556671143,
-        "x1": 0.9474745988845825,
-        "y1": 213.3313751220703,
-        "x2": 235.13192749023438,
-        "y2": 430.96087646484375,
-        "zone": "LEFT",
-        "area_fraction": 0.0818
-      },
-      {
-        "class_name": "Cat",
-        "confidence": 0.5304490923881531,
-        "x1": 1.0442301034927368,
-        "y1": 212.4194793701172,
-        "x2": 235.84005737304688,
-        "y2": 431.95623779296875,
-        "zone": "LEFT",
-        "area_fraction": 0.0827
-      }
-    ]
+    "timestamp_sec": 410.034,
+    "detections": []
   },
   {
     "frame_index": 282,
-    "timestamp_sec": 9.4,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.730939507484436,
-        "x1": 1.1141583919525146,
-        "y1": 212.8282928466797,
-        "x2": 233.52708435058594,
-        "y2": 434.78289794921875,
-        "zone": "LEFT",
-        "area_fraction": 0.0828
-      }
-    ]
+    "timestamp_sec": 410.76,
+    "detections": []
   },
   {
     "frame_index": 283,
-    "timestamp_sec": 9.433,
+    "timestamp_sec": 412.123,
     "detections": []
   },
   {
     "frame_index": 284,
-    "timestamp_sec": 9.467,
+    "timestamp_sec": 412.839,
     "detections": []
   },
   {
     "frame_index": 285,
-    "timestamp_sec": 9.5,
-    "detections": [
-      {
-        "class_name": "Lion",
-        "confidence": 0.3915163278579712,
-        "x1": 1.215973973274231,
-        "y1": 209.03192138671875,
-        "x2": 228.43536376953125,
-        "y2": 420.3658447265625,
-        "zone": "LEFT",
-        "area_fraction": 0.077
-      }
-    ]
+    "timestamp_sec": 413.936,
+    "detections": []
   },
   {
     "frame_index": 286,
-    "timestamp_sec": 9.533,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.4398716390132904,
-        "x1": 1.1916311979293823,
-        "y1": 205.53868103027344,
-        "x2": 225.0313262939453,
-        "y2": 422.37933349609375,
-        "zone": "LEFT",
-        "area_fraction": 0.0779
-      }
-    ]
+    "timestamp_sec": 414.958,
+    "detections": []
   },
   {
     "frame_index": 287,
-    "timestamp_sec": 9.567,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.49828457832336426,
-        "x1": 1.2359404563903809,
-        "y1": 206.10604858398438,
-        "x2": 223.34756469726562,
-        "y2": 423.9498596191406,
-        "zone": "LEFT",
-        "area_fraction": 0.0776
-      }
-    ]
+    "timestamp_sec": 415.958,
+    "detections": []
   },
   {
     "frame_index": 288,
-    "timestamp_sec": 9.6,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.45589497685432434,
-        "x1": 1.1775680780410767,
-        "y1": 206.1036834716797,
-        "x2": 223.31507873535156,
-        "y2": 423.7206726074219,
-        "zone": "LEFT",
-        "area_fraction": 0.0776
-      }
-    ]
+    "timestamp_sec": 416.946,
+    "detections": []
   },
   {
     "frame_index": 289,
-    "timestamp_sec": 9.633,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.5566107034683228,
-        "x1": 1.5419795513153076,
-        "y1": 205.83175659179688,
-        "x2": 221.92507934570312,
-        "y2": 425.82171630859375,
-        "zone": "LEFT",
-        "area_fraction": 0.0778
-      }
-    ]
+    "timestamp_sec": 417.962,
+    "detections": []
   },
   {
     "frame_index": 290,
-    "timestamp_sec": 9.667,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.6045767664909363,
-        "x1": 1.664878487586975,
-        "y1": 205.82952880859375,
-        "x2": 220.1304168701172,
-        "y2": 429.49151611328125,
-        "zone": "LEFT",
-        "area_fraction": 0.0784
-      }
-    ]
+    "timestamp_sec": 418.791,
+    "detections": []
   },
   {
     "frame_index": 291,
-    "timestamp_sec": 9.7,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.6495015621185303,
-        "x1": 1.8102282285690308,
-        "y1": 206.12942504882812,
-        "x2": 222.91192626953125,
-        "y2": 427.3993225097656,
-        "zone": "LEFT",
-        "area_fraction": 0.0785
-      }
-    ]
+    "timestamp_sec": 420.027,
+    "detections": []
   },
   {
     "frame_index": 292,
-    "timestamp_sec": 9.733,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.7259610295295715,
-        "x1": 1.8513237237930298,
-        "y1": 206.07955932617188,
-        "x2": 223.48443603515625,
-        "y2": 428.48065185546875,
-        "zone": "LEFT",
-        "area_fraction": 0.0791
-      }
-    ]
+    "timestamp_sec": 421.061,
+    "detections": []
   },
   {
     "frame_index": 293,
-    "timestamp_sec": 9.767,
+    "timestamp_sec": 421.838,
     "detections": []
   },
   {
     "frame_index": 294,
-    "timestamp_sec": 9.8,
-    "detections": [
-      {
-        "class_name": "Dog",
-        "confidence": 0.4170287251472473,
-        "x1": 1.1121526956558228,
-        "y1": 212.1713104248047,
-        "x2": 225.16598510742188,
-        "y2": 437.1625671386719,
-        "zone": "LEFT",
-        "area_fraction": 0.0809
-      }
-    ]
+    "timestamp_sec": 422.85,
+    "detections": []
   },
   {
     "frame_index": 295,
-    "timestamp_sec": 9.833,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.35545340180397034,
-        "x1": 1.2813209295272827,
-        "y1": 214.44667053222656,
-        "x2": 222.43190002441406,
-        "y2": 437.87451171875,
-        "zone": "LEFT",
-        "area_fraction": 0.0793
-      }
-    ]
+    "timestamp_sec": 424.021,
+    "detections": []
   },
   {
     "frame_index": 296,
-    "timestamp_sec": 9.867,
+    "timestamp_sec": 424.768,
     "detections": []
   },
   {
     "frame_index": 297,
-    "timestamp_sec": 9.9,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.4406076669692993,
-        "x1": 0.8586965799331665,
-        "y1": 218.9504852294922,
-        "x2": 261.8749694824219,
-        "y2": 439.1388854980469,
-        "zone": "LEFT",
-        "area_fraction": 0.0922
-      }
-    ]
+    "timestamp_sec": 425.954,
+    "detections": []
   },
   {
     "frame_index": 298,
-    "timestamp_sec": 9.933,
+    "timestamp_sec": 426.998,
     "detections": []
   },
   {
     "frame_index": 299,
-    "timestamp_sec": 9.967,
+    "timestamp_sec": 427.992,
     "detections": []
   },
   {
     "frame_index": 300,
-    "timestamp_sec": 10.0,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.4509439766407013,
-        "x1": 1.2635881900787354,
-        "y1": 219.7669219970703,
-        "x2": 262.509521484375,
-        "y2": 442.7291259765625,
-        "zone": "LEFT",
-        "area_fraction": 0.0934
-      }
-    ]
+    "timestamp_sec": 428.893,
+    "detections": []
   },
   {
     "frame_index": 301,
-    "timestamp_sec": 10.033,
+    "timestamp_sec": 429.573,
     "detections": []
   },
   {
     "frame_index": 302,
-    "timestamp_sec": 10.067,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.42651891708374023,
-        "x1": 1.2510749101638794,
-        "y1": 215.70155334472656,
-        "x2": 282.88653564453125,
-        "y2": 444.0545654296875,
-        "zone": "LEFT",
-        "area_fraction": 0.1032
-      }
-    ]
+    "timestamp_sec": 430.507,
+    "detections": []
   },
   {
     "frame_index": 303,
-    "timestamp_sec": 10.1,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.621454119682312,
-        "x1": 0.9204651117324829,
-        "y1": 197.91043090820312,
-        "x2": 311.97564697265625,
-        "y2": 445.6634216308594,
-        "zone": "LEFT",
-        "area_fraction": 0.1236
-      }
-    ]
+    "timestamp_sec": 431.577,
+    "detections": []
   },
   {
     "frame_index": 304,
-    "timestamp_sec": 10.133,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.6436299085617065,
-        "x1": 1.0500422716140747,
-        "y1": 215.4222412109375,
-        "x2": 302.0735778808594,
-        "y2": 445.2145080566406,
-        "zone": "LEFT",
-        "area_fraction": 0.111
-      }
-    ]
+    "timestamp_sec": 433.184,
+    "detections": []
   },
   {
     "frame_index": 305,
-    "timestamp_sec": 10.167,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.8230329155921936,
-        "x1": 1.0601166486740112,
-        "y1": 192.62779235839844,
-        "x2": 307.7105407714844,
-        "y2": 446.47784423828125,
-        "zone": "LEFT",
-        "area_fraction": 0.1249
-      }
-    ]
+    "timestamp_sec": 434.145,
+    "detections": []
   },
   {
     "frame_index": 306,
-    "timestamp_sec": 10.2,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.6631948947906494,
-        "x1": 1.105497121810913,
-        "y1": 224.8782501220703,
-        "x2": 303.7274169921875,
-        "y2": 447.53863525390625,
-        "zone": "LEFT",
-        "area_fraction": 0.1081
-      }
-    ]
+    "timestamp_sec": 434.979,
+    "detections": []
   },
   {
     "frame_index": 307,
-    "timestamp_sec": 10.233,
+    "timestamp_sec": 436.005,
     "detections": []
   },
   {
     "frame_index": 308,
-    "timestamp_sec": 10.267,
+    "timestamp_sec": 437.103,
     "detections": []
   },
   {
     "frame_index": 309,
-    "timestamp_sec": 10.3,
+    "timestamp_sec": 438.008,
     "detections": []
   },
   {
     "frame_index": 310,
-    "timestamp_sec": 10.333,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.47928279638290405,
-        "x1": 0.8459781408309937,
-        "y1": 221.44410705566406,
-        "x2": 298.0554504394531,
-        "y2": 452.0363464355469,
-        "zone": "LEFT",
-        "area_fraction": 0.11
-      }
-    ]
+    "timestamp_sec": 438.907,
+    "detections": []
   },
   {
     "frame_index": 311,
-    "timestamp_sec": 10.367,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.5836138129234314,
-        "x1": 1.1303869485855103,
-        "y1": 226.65286254882812,
-        "x2": 293.8937683105469,
-        "y2": 453.3522033691406,
-        "zone": "LEFT",
-        "area_fraction": 0.1065
-      }
-    ]
+    "timestamp_sec": 439.877,
+    "detections": []
   },
   {
     "frame_index": 312,
-    "timestamp_sec": 10.4,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.6361210942268372,
-        "x1": 1.0094482898712158,
-        "y1": 230.90139770507812,
-        "x2": 295.12188720703125,
-        "y2": 453.6124267578125,
-        "zone": "LEFT",
-        "area_fraction": 0.1051
-      }
-    ]
+    "timestamp_sec": 440.964,
+    "detections": []
   },
   {
     "frame_index": 313,
-    "timestamp_sec": 10.433,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.4869552552700043,
-        "x1": 1.4435145854949951,
-        "y1": 240.1909637451172,
-        "x2": 292.9931335449219,
-        "y2": 456.08953857421875,
-        "zone": "LEFT",
-        "area_fraction": 0.101
-      }
-    ]
+    "timestamp_sec": 441.999,
+    "detections": []
   },
   {
     "frame_index": 314,
-    "timestamp_sec": 10.467,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.5266925096511841,
-        "x1": 1.2530122995376587,
-        "y1": 237.0172119140625,
-        "x2": 294.05303955078125,
-        "y2": 454.6796569824219,
-        "zone": "LEFT",
-        "area_fraction": 0.1022
-      }
-    ]
+    "timestamp_sec": 442.931,
+    "detections": []
   },
   {
     "frame_index": 315,
-    "timestamp_sec": 10.5,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.4969366192817688,
-        "x1": 1.259736180305481,
-        "y1": 233.072265625,
-        "x2": 298.7418212890625,
-        "y2": 455.2881774902344,
-        "zone": "LEFT",
-        "area_fraction": 0.1061
-      }
-    ]
+    "timestamp_sec": 444.013,
+    "detections": []
   },
   {
     "frame_index": 316,
-    "timestamp_sec": 10.533,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.6991884112358093,
-        "x1": 1.5257055759429932,
-        "y1": 228.6536102294922,
-        "x2": 302.8404846191406,
-        "y2": 456.1895446777344,
-        "zone": "LEFT",
-        "area_fraction": 0.11
-      }
-    ]
+    "timestamp_sec": 444.974,
+    "detections": []
   },
   {
     "frame_index": 317,
-    "timestamp_sec": 10.567,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.6955028772354126,
-        "x1": 1.7491207122802734,
-        "y1": 236.05967712402344,
-        "x2": 306.0201416015625,
-        "y2": 457.7294006347656,
-        "zone": "LEFT",
-        "area_fraction": 0.1082
-      }
-    ]
+    "timestamp_sec": 445.938,
+    "detections": []
   },
   {
     "frame_index": 318,
-    "timestamp_sec": 10.6,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.6444790959358215,
-        "x1": 2.5509490966796875,
-        "y1": 228.8498077392578,
-        "x2": 307.5809326171875,
-        "y2": 457.80828857421875,
-        "zone": "LEFT",
-        "area_fraction": 0.112
-      }
-    ]
+    "timestamp_sec": 446.991,
+    "detections": []
   },
   {
     "frame_index": 319,
-    "timestamp_sec": 10.633,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.744436502456665,
-        "x1": 2.5944833755493164,
-        "y1": 233.0723114013672,
-        "x2": 310.7336730957031,
-        "y2": 458.0648193359375,
-        "zone": "LEFT",
-        "area_fraction": 0.1112
-      }
-    ]
+    "timestamp_sec": 447.96,
+    "detections": []
   },
   {
     "frame_index": 320,
-    "timestamp_sec": 10.667,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.710881233215332,
-        "x1": 2.972684621810913,
-        "y1": 232.67198181152344,
-        "x2": 314.1560974121094,
-        "y2": 459.1202087402344,
-        "zone": "LEFT",
-        "area_fraction": 0.1131
-      }
-    ]
+    "timestamp_sec": 448.855,
+    "detections": []
   },
   {
     "frame_index": 321,
-    "timestamp_sec": 10.7,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.7493947148323059,
-        "x1": 6.057737827301025,
-        "y1": 230.951171875,
-        "x2": 317.58233642578125,
-        "y2": 459.78741455078125,
-        "zone": "LEFT",
-        "area_fraction": 0.1144
-      }
-    ]
+    "timestamp_sec": 450.002,
+    "detections": []
   },
   {
     "frame_index": 322,
-    "timestamp_sec": 10.733,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.8180233836174011,
-        "x1": 4.881263732910156,
-        "y1": 230.9018096923828,
-        "x2": 320.4013671875,
-        "y2": 462.3946838378906,
-        "zone": "LEFT",
-        "area_fraction": 0.1172
-      }
-    ]
+    "timestamp_sec": 450.949,
+    "detections": []
   },
   {
     "frame_index": 323,
-    "timestamp_sec": 10.767,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.8450123071670532,
-        "x1": 3.7498741149902344,
-        "y1": 230.77024841308594,
-        "x2": 323.9151916503906,
-        "y2": 458.856689453125,
-        "zone": "LEFT",
-        "area_fraction": 0.1172
-      }
-    ]
+    "timestamp_sec": 452.128,
+    "detections": []
   },
   {
     "frame_index": 324,
-    "timestamp_sec": 10.8,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.8560330867767334,
-        "x1": 5.701896667480469,
-        "y1": 231.6274871826172,
-        "x2": 325.07769775390625,
-        "y2": 456.34832763671875,
-        "zone": "LEFT",
-        "area_fraction": 0.1151
-      }
-    ]
+    "timestamp_sec": 452.975,
+    "detections": []
   },
   {
     "frame_index": 325,
-    "timestamp_sec": 10.833,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.8414672613143921,
-        "x1": 6.262417316436768,
-        "y1": 231.6585235595703,
-        "x2": 328.6744079589844,
-        "y2": 458.46563720703125,
-        "zone": "LEFT",
-        "area_fraction": 0.1173
-      }
-    ]
+    "timestamp_sec": 453.903,
+    "detections": []
   },
   {
     "frame_index": 326,
-    "timestamp_sec": 10.867,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.8130908012390137,
-        "x1": 2.1404733657836914,
-        "y1": 232.04364013671875,
-        "x2": 329.4621276855469,
-        "y2": 462.08441162109375,
-        "zone": "LEFT",
-        "area_fraction": 0.1208
-      }
-    ]
+    "timestamp_sec": 454.987,
+    "detections": []
   },
   {
     "frame_index": 327,
-    "timestamp_sec": 10.9,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.7615665197372437,
-        "x1": 1.822559118270874,
-        "y1": 232.54757690429688,
-        "x2": 330.6084289550781,
-        "y2": 462.5943298339844,
-        "zone": "LEFT",
-        "area_fraction": 0.1213
-      }
-    ]
+    "timestamp_sec": 455.848,
+    "detections": []
   },
   {
     "frame_index": 328,
-    "timestamp_sec": 10.933,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.6816627979278564,
-        "x1": 1.9506092071533203,
-        "y1": 232.5338134765625,
-        "x2": 331.1393737792969,
-        "y2": 462.8116455078125,
-        "zone": "LEFT",
-        "area_fraction": 0.1216
-      }
-    ]
+    "timestamp_sec": 456.882,
+    "detections": []
   },
   {
     "frame_index": 329,
-    "timestamp_sec": 10.967,
+    "timestamp_sec": 457.95,
     "detections": []
   },
   {
     "frame_index": 330,
-    "timestamp_sec": 11.0,
+    "timestamp_sec": 459.014,
     "detections": []
   },
   {
     "frame_index": 331,
-    "timestamp_sec": 11.033,
+    "timestamp_sec": 459.979,
     "detections": []
   },
   {
     "frame_index": 332,
-    "timestamp_sec": 11.067,
+    "timestamp_sec": 460.852,
     "detections": []
   },
   {
     "frame_index": 333,
-    "timestamp_sec": 11.1,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.8158139586448669,
-        "x1": 1.6278173923492432,
-        "y1": 235.98219299316406,
-        "x2": 340.9966125488281,
-        "y2": 467.6719970703125,
-        "zone": "LEFT",
-        "area_fraction": 0.1261
-      }
-    ]
+    "timestamp_sec": 461.799,
+    "detections": []
   },
   {
     "frame_index": 334,
-    "timestamp_sec": 11.133,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.866381824016571,
-        "x1": 1.3729480504989624,
-        "y1": 236.8997802734375,
-        "x2": 345.65692138671875,
-        "y2": 469.00982666015625,
-        "zone": "LEFT",
-        "area_fraction": 0.1282
-      }
-    ]
+    "timestamp_sec": 462.819,
+    "detections": []
   },
   {
     "frame_index": 335,
-    "timestamp_sec": 11.167,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.8610851764678955,
-        "x1": 1.2803409099578857,
-        "y1": 237.14242553710938,
-        "x2": 347.2845764160156,
-        "y2": 469.5382995605469,
-        "zone": "LEFT",
-        "area_fraction": 0.129
-      }
-    ]
+    "timestamp_sec": 463.93,
+    "detections": []
   },
   {
     "frame_index": 336,
-    "timestamp_sec": 11.2,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.8631891012191772,
-        "x1": 1.1983550786972046,
-        "y1": 237.44818115234375,
-        "x2": 350.23809814453125,
-        "y2": 469.7669677734375,
-        "zone": "LEFT",
-        "area_fraction": 0.1301
-      }
-    ]
+    "timestamp_sec": 464.969,
+    "detections": []
   },
   {
     "frame_index": 337,
-    "timestamp_sec": 11.233,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.9166009426116943,
-        "x1": 0.8827657699584961,
-        "y1": 240.8145294189453,
-        "x2": 353.0489196777344,
-        "y2": 472.6733703613281,
-        "zone": "LEFT",
-        "area_fraction": 0.131
-      }
-    ]
+    "timestamp_sec": 465.763,
+    "detections": []
   },
   {
     "frame_index": 338,
-    "timestamp_sec": 11.267,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.90931636095047,
-        "x1": 1.27448308467865,
-        "y1": 243.6702880859375,
-        "x2": 356.2116394042969,
-        "y2": 473.88671875,
-        "zone": "LEFT",
-        "area_fraction": 0.1311
-      }
-    ]
+    "timestamp_sec": 466.974,
+    "detections": []
   },
   {
     "frame_index": 339,
-    "timestamp_sec": 11.3,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.9068393707275391,
-        "x1": 1.2998743057250977,
-        "y1": 243.87237548828125,
-        "x2": 356.4232482910156,
-        "y2": 474.0376892089844,
-        "zone": "LEFT",
-        "area_fraction": 0.1311
-      }
-    ]
+    "timestamp_sec": 467.881,
+    "detections": []
   },
   {
     "frame_index": 340,
-    "timestamp_sec": 11.333,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.8336066007614136,
-        "x1": 12.270148277282715,
-        "y1": 242.76222229003906,
-        "x2": 360.4788818359375,
-        "y2": 474.7301025390625,
-        "zone": "LEFT",
-        "area_fraction": 0.1296
-      }
-    ]
+    "timestamp_sec": 469.088,
+    "detections": []
   },
   {
     "frame_index": 341,
-    "timestamp_sec": 11.367,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.8304144740104675,
-        "x1": 12.250146865844727,
-        "y1": 241.86660766601562,
-        "x2": 362.1241455078125,
-        "y2": 475.7156677246094,
-        "zone": "LEFT",
-        "area_fraction": 0.1313
-      }
-    ]
+    "timestamp_sec": 469.919,
+    "detections": []
   },
   {
     "frame_index": 342,
-    "timestamp_sec": 11.4,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.8212675452232361,
-        "x1": 10.422607421875,
-        "y1": 241.60011291503906,
-        "x2": 363.4066467285156,
-        "y2": 477.8927001953125,
-        "zone": "LEFT",
-        "area_fraction": 0.1338
-      }
-    ]
+    "timestamp_sec": 470.868,
+    "detections": []
   },
   {
     "frame_index": 343,
-    "timestamp_sec": 11.433,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.7903338074684143,
-        "x1": 8.689920425415039,
-        "y1": 240.97769165039062,
-        "x2": 364.59686279296875,
-        "y2": 479.6535339355469,
-        "zone": "LEFT",
-        "area_fraction": 0.1363
-      }
-    ]
+    "timestamp_sec": 471.984,
+    "detections": []
   },
   {
     "frame_index": 344,
-    "timestamp_sec": 11.467,
+    "timestamp_sec": 472.838,
     "detections": []
   },
   {
     "frame_index": 345,
-    "timestamp_sec": 11.5,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.8277461528778076,
-        "x1": 5.723390102386475,
-        "y1": 240.85264587402344,
-        "x2": 366.8549499511719,
-        "y2": 483.3214416503906,
-        "zone": "LEFT",
-        "area_fraction": 0.1405
-      }
-    ]
+    "timestamp_sec": 474.082,
+    "detections": []
   },
   {
     "frame_index": 346,
-    "timestamp_sec": 11.533,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.8240107297897339,
-        "x1": 1.8860143423080444,
-        "y1": 241.1876983642578,
-        "x2": 368.8252258300781,
-        "y2": 484.24505615234375,
-        "zone": "LEFT",
-        "area_fraction": 0.1431
-      }
-    ]
+    "timestamp_sec": 474.887,
+    "detections": []
   },
   {
     "frame_index": 347,
-    "timestamp_sec": 11.567,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.8316509127616882,
-        "x1": 2.8793935775756836,
-        "y1": 241.88233947753906,
-        "x2": 370.65069580078125,
-        "y2": 485.67816162109375,
-        "zone": "LEFT",
-        "area_fraction": 0.1438
-      }
-    ]
+    "timestamp_sec": 476.041,
+    "detections": []
   },
   {
     "frame_index": 348,
-    "timestamp_sec": 11.6,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.7545803189277649,
-        "x1": 6.693201541900635,
-        "y1": 242.3043212890625,
-        "x2": 372.41473388671875,
-        "y2": 487.5989685058594,
-        "zone": "LEFT",
-        "area_fraction": 0.1439
-      }
-    ]
+    "timestamp_sec": 476.792,
+    "detections": []
   },
   {
     "frame_index": 349,
-    "timestamp_sec": 11.633,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.7220460772514343,
-        "x1": 4.949585437774658,
-        "y1": 242.67515563964844,
-        "x2": 373.7646179199219,
-        "y2": 489.2740478515625,
-        "zone": "LEFT",
-        "area_fraction": 0.1459
-      }
-    ]
+    "timestamp_sec": 477.894,
+    "detections": []
   },
   {
     "frame_index": 350,
-    "timestamp_sec": 11.667,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.6594983339309692,
-        "x1": 2.169511318206787,
-        "y1": 244.25306701660156,
-        "x2": 373.58856201171875,
-        "y2": 490.80157470703125,
-        "zone": "LEFT",
-        "area_fraction": 0.1469
-      }
-    ]
+    "timestamp_sec": 478.863,
+    "detections": []
   },
   {
     "frame_index": 351,
-    "timestamp_sec": 11.7,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.5964962840080261,
-        "x1": 1.9161465167999268,
-        "y1": 244.060546875,
-        "x2": 372.82916259765625,
-        "y2": 490.6743469238281,
-        "zone": "LEFT",
-        "area_fraction": 0.1468
-      }
-    ]
+    "timestamp_sec": 479.809,
+    "detections": []
   },
   {
     "frame_index": 352,
-    "timestamp_sec": 11.733,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.7216306328773499,
-        "x1": 1.2827341556549072,
-        "y1": 243.31509399414062,
-        "x2": 376.1697998046875,
-        "y2": 490.2046813964844,
-        "zone": "LEFT",
-        "area_fraction": 0.1485
-      }
-    ]
+    "timestamp_sec": 480.804,
+    "detections": []
   },
   {
     "frame_index": 353,
-    "timestamp_sec": 11.767,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.7131654024124146,
-        "x1": 1.7205727100372314,
-        "y1": 243.32699584960938,
-        "x2": 377.3350830078125,
-        "y2": 491.60467529296875,
-        "zone": "LEFT",
-        "area_fraction": 0.1496
-      }
-    ]
+    "timestamp_sec": 481.794,
+    "detections": []
   },
   {
     "frame_index": 354,
-    "timestamp_sec": 11.8,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.8331608176231384,
-        "x1": 1.5243265628814697,
-        "y1": 243.37786865234375,
-        "x2": 383.4728698730469,
-        "y2": 491.862060546875,
-        "zone": "LEFT",
-        "area_fraction": 0.1523
-      }
-    ]
+    "timestamp_sec": 482.831,
+    "detections": []
   },
   {
     "frame_index": 355,
-    "timestamp_sec": 11.833,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.8153815865516663,
-        "x1": 1.5875651836395264,
-        "y1": 243.32672119140625,
-        "x2": 383.05023193359375,
-        "y2": 491.8709716796875,
-        "zone": "LEFT",
-        "area_fraction": 0.1521
-      }
-    ]
+    "timestamp_sec": 483.992,
+    "detections": []
   },
   {
     "frame_index": 356,
-    "timestamp_sec": 11.867,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.8261498212814331,
-        "x1": 0.8261483907699585,
-        "y1": 244.784912109375,
-        "x2": 381.1090087890625,
-        "y2": 492.59906005859375,
-        "zone": "LEFT",
-        "area_fraction": 0.1512
-      }
-    ]
+    "timestamp_sec": 484.799,
+    "detections": []
   },
   {
     "frame_index": 357,
-    "timestamp_sec": 11.9,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.8224686980247498,
-        "x1": 0.5862312316894531,
-        "y1": 247.9843292236328,
-        "x2": 383.6892395019531,
-        "y2": 493.60198974609375,
-        "zone": "LEFT",
-        "area_fraction": 0.151
-      }
-    ]
+    "timestamp_sec": 485.817,
+    "detections": []
   },
   {
     "frame_index": 358,
-    "timestamp_sec": 11.933,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.8326560258865356,
-        "x1": 0.5469363927841187,
-        "y1": 247.88929748535156,
-        "x2": 383.6332702636719,
-        "y2": 493.6057434082031,
-        "zone": "LEFT",
-        "area_fraction": 0.151
-      }
-    ]
+    "timestamp_sec": 486.937,
+    "detections": []
   },
   {
     "frame_index": 359,
-    "timestamp_sec": 11.967,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.7774822115898132,
-        "x1": 0.5776611566543579,
-        "y1": 249.8719482421875,
-        "x2": 385.50018310546875,
-        "y2": 495.716552734375,
-        "zone": "LEFT",
-        "area_fraction": 0.1518
-      }
-    ]
+    "timestamp_sec": 488.003,
+    "detections": []
   },
   {
     "frame_index": 360,
-    "timestamp_sec": 12.0,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.5459862351417542,
-        "x1": 0.2623909115791321,
-        "y1": 253.1925811767578,
-        "x2": 384.7266845703125,
-        "y2": 498.8938903808594,
-        "zone": "LEFT",
-        "area_fraction": 0.1516
-      }
-    ]
+    "timestamp_sec": 488.828,
+    "detections": []
   },
   {
     "frame_index": 361,
-    "timestamp_sec": 12.033,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.5228855609893799,
-        "x1": 0.2666759490966797,
-        "y1": 253.21739196777344,
-        "x2": 384.7140197753906,
-        "y2": 498.8479919433594,
-        "zone": "LEFT",
-        "area_fraction": 0.1515
-      }
-    ]
+    "timestamp_sec": 490.017,
+    "detections": []
   },
   {
     "frame_index": 362,
-    "timestamp_sec": 12.067,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.6374880075454712,
-        "x1": 0.7951046228408813,
-        "y1": 255.00201416015625,
-        "x2": 386.42803955078125,
-        "y2": 498.7511291503906,
-        "zone": "LEFT",
-        "area_fraction": 0.1508
-      }
-    ]
+    "timestamp_sec": 490.864,
+    "detections": []
   },
   {
     "frame_index": 363,
-    "timestamp_sec": 12.1,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.7280911803245544,
-        "x1": 0.7951957583427429,
-        "y1": 256.219970703125,
-        "x2": 389.883056640625,
-        "y2": 499.1654052734375,
-        "zone": "LEFT",
-        "area_fraction": 0.1517
-      }
-    ]
+    "timestamp_sec": 491.921,
+    "detections": []
   },
   {
     "frame_index": 364,
-    "timestamp_sec": 12.133,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.6926732063293457,
-        "x1": 0.5606120824813843,
-        "y1": 256.5965576171875,
-        "x2": 393.3442077636719,
-        "y2": 499.9144287109375,
-        "zone": "LEFT",
-        "area_fraction": 0.1533
-      }
-    ]
+    "timestamp_sec": 492.921,
+    "detections": []
   },
   {
     "frame_index": 365,
-    "timestamp_sec": 12.167,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.6089901328086853,
-        "x1": 0.9060600399971008,
-        "y1": 256.9098815917969,
-        "x2": 396.3313293457031,
-        "y2": 499.8408203125,
-        "zone": "LEFT",
-        "area_fraction": 0.1541
-      }
-    ]
+    "timestamp_sec": 494.006,
+    "detections": []
   },
   {
     "frame_index": 366,
-    "timestamp_sec": 12.2,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.7014551162719727,
-        "x1": 0.6359651684761047,
-        "y1": 254.08729553222656,
-        "x2": 398.51971435546875,
-        "y2": 500.31353759765625,
-        "zone": "LEFT",
-        "area_fraction": 0.1572
-      }
-    ]
+    "timestamp_sec": 494.959,
+    "detections": []
   },
   {
     "frame_index": 367,
-    "timestamp_sec": 12.233,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.571746289730072,
-        "x1": 1.2673717737197876,
-        "y1": 253.15830993652344,
-        "x2": 400.0719909667969,
-        "y2": 500.73797607421875,
-        "zone": "LEFT",
-        "area_fraction": 0.1584
-      }
-    ]
+    "timestamp_sec": 496.332,
+    "detections": []
   },
   {
     "frame_index": 368,
-    "timestamp_sec": 12.267,
+    "timestamp_sec": 497.935,
     "detections": []
   },
   {
     "frame_index": 369,
-    "timestamp_sec": 12.3,
+    "timestamp_sec": 498.866,
     "detections": []
   },
   {
     "frame_index": 370,
-    "timestamp_sec": 12.333,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.383726567029953,
-        "x1": 1.6614139080047607,
-        "y1": 248.6360321044922,
-        "x2": 398.65283203125,
-        "y2": 498.7502136230469,
-        "zone": "LEFT",
-        "area_fraction": 0.1593
-      }
-    ]
+    "timestamp_sec": 499.668,
+    "detections": []
   },
   {
     "frame_index": 371,
-    "timestamp_sec": 12.367,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.4030663073062897,
-        "x1": 1.6465985774993896,
-        "y1": 248.5459442138672,
-        "x2": 398.9880065917969,
-        "y2": 498.8228759765625,
-        "zone": "LEFT",
-        "area_fraction": 0.1595
-      }
-    ]
+    "timestamp_sec": 500.489,
+    "detections": []
   },
   {
     "frame_index": 372,
-    "timestamp_sec": 12.4,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.3674999177455902,
-        "x1": 1.779070496559143,
-        "y1": 247.65711975097656,
-        "x2": 396.2487487792969,
-        "y2": 498.8687438964844,
-        "zone": "LEFT",
-        "area_fraction": 0.159
-      }
-    ]
+    "timestamp_sec": 501.278,
+    "detections": []
   },
   {
     "frame_index": 373,
-    "timestamp_sec": 12.433,
+    "timestamp_sec": 502.08,
     "detections": []
   },
   {
     "frame_index": 374,
-    "timestamp_sec": 12.467,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.1800621598958969,
-        "x1": 0.5989952087402344,
-        "y1": 247.53604125976562,
-        "x2": 400.0491027832031,
-        "y2": 499.9190368652344,
-        "zone": "LEFT",
-        "area_fraction": 0.1617
-      }
-    ]
+    "timestamp_sec": 503.041,
+    "detections": []
   },
   {
     "frame_index": 375,
-    "timestamp_sec": 12.5,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.25536760687828064,
-        "x1": 0.8785263299942017,
-        "y1": 247.77072143554688,
-        "x2": 396.7076110839844,
-        "y2": 498.1097717285156,
-        "zone": "LEFT",
-        "area_fraction": 0.159
-      }
-    ]
+    "timestamp_sec": 503.786,
+    "detections": []
   },
   {
     "frame_index": 376,
-    "timestamp_sec": 12.533,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.2845216393470764,
-        "x1": 1.1129276752471924,
-        "y1": 248.506103515625,
-        "x2": 392.2396240234375,
-        "y2": 497.3467712402344,
-        "zone": "LEFT",
-        "area_fraction": 0.1561
-      }
-    ]
+    "timestamp_sec": 505.066,
+    "detections": []
   },
   {
     "frame_index": 377,
-    "timestamp_sec": 12.567,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.1910071074962616,
-        "x1": 0.7931444048881531,
-        "y1": 248.2721710205078,
-        "x2": 391.41729736328125,
-        "y2": 496.7601623535156,
-        "zone": "LEFT",
-        "area_fraction": 0.1557
-      }
-    ]
+    "timestamp_sec": 505.967,
+    "detections": []
   },
   {
     "frame_index": 378,
-    "timestamp_sec": 12.6,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.2272997945547104,
-        "x1": 0.7316493988037109,
-        "y1": 248.07696533203125,
-        "x2": 390.117919921875,
-        "y2": 496.8193054199219,
-        "zone": "LEFT",
-        "area_fraction": 0.1554
-      }
-    ]
+    "timestamp_sec": 506.809,
+    "detections": []
   },
   {
     "frame_index": 379,
-    "timestamp_sec": 12.633,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.34363096952438354,
-        "x1": 0.9102538824081421,
-        "y1": 247.44082641601562,
-        "x2": 381.0721740722656,
-        "y2": 498.1592102050781,
-        "zone": "LEFT",
-        "area_fraction": 0.1529
-      },
-      {
-        "class_name": "Cat",
-        "confidence": 0.17697393894195557,
-        "x1": 1.051945447921753,
-        "y1": 245.6669464111328,
-        "x2": 379.3539733886719,
-        "y2": 499.1919860839844,
-        "zone": "LEFT",
-        "area_fraction": 0.1539
-      }
-    ]
+    "timestamp_sec": 507.946,
+    "detections": []
   },
   {
     "frame_index": 380,
-    "timestamp_sec": 12.667,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.22002412378787994,
-        "x1": 0.40854984521865845,
-        "y1": 247.44378662109375,
-        "x2": 380.4049072265625,
-        "y2": 498.31683349609375,
-        "zone": "LEFT",
-        "area_fraction": 0.1529
-      }
-    ]
+    "timestamp_sec": 508.988,
+    "detections": []
   },
   {
     "frame_index": 381,
-    "timestamp_sec": 12.7,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.26206889748573303,
-        "x1": 0.38556328415870667,
-        "y1": 246.4691162109375,
-        "x2": 376.3000183105469,
-        "y2": 498.82232666015625,
-        "zone": "LEFT",
-        "area_fraction": 0.1522
-      },
-      {
-        "class_name": "Cat",
-        "confidence": 0.2594326138496399,
-        "x1": 0.3378351330757141,
-        "y1": 244.44247436523438,
-        "x2": 373.3002014160156,
-        "y2": 500.8537292480469,
-        "zone": "LEFT",
-        "area_fraction": 0.1534
-      },
-      {
-        "class_name": "Cat",
-        "confidence": 0.13497889041900635,
-        "x1": 3.1742186546325684,
-        "y1": 221.15013122558594,
-        "x2": 538.356201171875,
-        "y2": 502.2221984863281,
-        "zone": "CENTER",
-        "area_fraction": 0.2413
-      }
-    ]
+    "timestamp_sec": 509.798,
+    "detections": []
   },
   {
     "frame_index": 382,
-    "timestamp_sec": 12.733,
-    "detections": [
-      {
-        "class_name": "Cat",
-        "confidence": 0.30642813444137573,
-        "x1": 1.3092535734176636,
-        "y1": 243.90145874023438,
-        "x2": 370.7246398925781,
-        "y2": 500.59515380859375,
-        "zone": "LEFT",
-        "area_fraction": 0.1521
-      },
-      {
-        "class_name": "Tiger",
-        "confidence": 0.30135902762413025,
-        "x1": 0.8789593577384949,
-        "y1": 245.9971160888672,
-        "x2": 371.7679443359375,
-        "y2": 498.7452087402344,
-        "zone": "LEFT",
-        "area_fraction": 0.1504
-      }
-    ]
+    "timestamp_sec": 511.09,
+    "detections": []
   },
   {
     "frame_index": 383,
-    "timestamp_sec": 12.767,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.16473233699798584,
-        "x1": 1.0798780918121338,
-        "y1": 246.44322204589844,
-        "x2": 369.6624755859375,
-        "y2": 499.399169921875,
-        "zone": "LEFT",
-        "area_fraction": 0.1496
-      }
-    ]
+    "timestamp_sec": 511.937,
+    "detections": []
   },
   {
     "frame_index": 384,
-    "timestamp_sec": 12.8,
-    "detections": [
-      {
-        "class_name": "Cat",
-        "confidence": 0.1906869262456894,
-        "x1": 1.7888599634170532,
-        "y1": 245.41180419921875,
-        "x2": 366.2901306152344,
-        "y2": 500.1307678222656,
-        "zone": "LEFT",
-        "area_fraction": 0.149
-      }
-    ]
+    "timestamp_sec": 513.094,
+    "detections": []
   },
   {
     "frame_index": 385,
-    "timestamp_sec": 12.833,
-    "detections": [
-      {
-        "class_name": "Cat",
-        "confidence": 0.1780482977628708,
-        "x1": 1.722954511642456,
-        "y1": 246.7286834716797,
-        "x2": 365.09552001953125,
-        "y2": 499.8935546875,
-        "zone": "LEFT",
-        "area_fraction": 0.1476
-      }
-    ]
+    "timestamp_sec": 513.988,
+    "detections": []
   },
   {
     "frame_index": 386,
-    "timestamp_sec": 12.867,
-    "detections": [
-      {
-        "class_name": "Cat",
-        "confidence": 0.3242621421813965,
-        "x1": 0.6977564692497253,
-        "y1": 248.89353942871094,
-        "x2": 363.6943359375,
-        "y2": 499.7727966308594,
-        "zone": "LEFT",
-        "area_fraction": 0.1461
-      }
-    ]
+    "timestamp_sec": 514.995,
+    "detections": []
   },
   {
     "frame_index": 387,
-    "timestamp_sec": 12.9,
-    "detections": [
-      {
-        "class_name": "Cat",
-        "confidence": 0.39542871713638306,
-        "x1": 0.7866256833076477,
-        "y1": 252.44552612304688,
-        "x2": 357.1626281738281,
-        "y2": 501.6806335449219,
-        "zone": "LEFT",
-        "area_fraction": 0.1425
-      }
-    ]
+    "timestamp_sec": 515.818,
+    "detections": []
   },
   {
     "frame_index": 388,
-    "timestamp_sec": 12.933,
-    "detections": [
-      {
-        "class_name": "Cat",
-        "confidence": 0.3612980842590332,
-        "x1": 0.6378797292709351,
-        "y1": 250.6843719482422,
-        "x2": 356.4988708496094,
-        "y2": 501.2613830566406,
-        "zone": "LEFT",
-        "area_fraction": 0.1431
-      }
-    ]
+    "timestamp_sec": 517.003,
+    "detections": []
   },
   {
     "frame_index": 389,
-    "timestamp_sec": 12.967,
-    "detections": [
-      {
-        "class_name": "Cat",
-        "confidence": 0.3961562216281891,
-        "x1": 0.0,
-        "y1": 249.5286407470703,
-        "x2": 352.4983215332031,
-        "y2": 501.4161071777344,
-        "zone": "LEFT",
-        "area_fraction": 0.1424
-      }
-    ]
+    "timestamp_sec": 518.062,
+    "detections": []
   },
   {
     "frame_index": 390,
-    "timestamp_sec": 13.0,
-    "detections": [
-      {
-        "class_name": "Cat",
-        "confidence": 0.40000733733177185,
-        "x1": 2.39028263092041,
-        "y1": 249.9519500732422,
-        "x2": 346.4737548828125,
-        "y2": 495.8082580566406,
-        "zone": "LEFT",
-        "area_fraction": 0.1357
-      }
-    ]
+    "timestamp_sec": 518.943,
+    "detections": []
   },
   {
     "frame_index": 391,
-    "timestamp_sec": 13.033,
-    "detections": [
-      {
-        "class_name": "Cat",
-        "confidence": 0.48647305369377136,
-        "x1": 0.4316503405570984,
-        "y1": 249.51678466796875,
-        "x2": 344.82318115234375,
-        "y2": 495.0213928222656,
-        "zone": "LEFT",
-        "area_fraction": 0.1356
-      }
-    ]
+    "timestamp_sec": 519.903,
+    "detections": []
   },
   {
     "frame_index": 392,
-    "timestamp_sec": 13.067,
-    "detections": [
-      {
-        "class_name": "Cat",
-        "confidence": 0.32051676511764526,
-        "x1": 0.6193491816520691,
-        "y1": 253.01193237304688,
-        "x2": 341.23968505859375,
-        "y2": 494.25341796875,
-        "zone": "LEFT",
-        "area_fraction": 0.1318
-      }
-    ]
+    "timestamp_sec": 521.059,
+    "detections": []
   },
   {
     "frame_index": 393,
-    "timestamp_sec": 13.1,
+    "timestamp_sec": 521.871,
     "detections": []
   },
   {
     "frame_index": 394,
-    "timestamp_sec": 13.133,
+    "timestamp_sec": 523.019,
     "detections": []
   },
   {
     "frame_index": 395,
-    "timestamp_sec": 13.167,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.41600728034973145,
-        "x1": 0.8786858320236206,
-        "y1": 247.7005157470703,
-        "x2": 343.97576904296875,
-        "y2": 499.7927551269531,
-        "zone": "LEFT",
-        "area_fraction": 0.1388
-      }
-    ]
+    "timestamp_sec": 523.966,
+    "detections": []
   },
   {
     "frame_index": 396,
-    "timestamp_sec": 13.2,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.6712256073951721,
-        "x1": 0.6211498379707336,
-        "y1": 248.1654510498047,
-        "x2": 344.2618713378906,
-        "y2": 499.4376525878906,
-        "zone": "LEFT",
-        "area_fraction": 0.1385
-      }
-    ]
+    "timestamp_sec": 524.995,
+    "detections": []
   },
   {
     "frame_index": 397,
-    "timestamp_sec": 13.233,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.4679279625415802,
-        "x1": 1.3173792362213135,
-        "y1": 250.83421325683594,
-        "x2": 342.1922912597656,
-        "y2": 498.6883239746094,
-        "zone": "LEFT",
-        "area_fraction": 0.1355
-      }
-    ]
+    "timestamp_sec": 525.845,
+    "detections": []
   },
   {
     "frame_index": 398,
-    "timestamp_sec": 13.267,
+    "timestamp_sec": 527.11,
     "detections": []
   },
   {
     "frame_index": 399,
-    "timestamp_sec": 13.3,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.6491163372993469,
-        "x1": 1.1929987668991089,
-        "y1": 250.34197998046875,
-        "x2": 342.389892578125,
-        "y2": 498.6595153808594,
-        "zone": "LEFT",
-        "area_fraction": 0.1359
-      }
-    ]
+    "timestamp_sec": 527.837,
+    "detections": []
   },
   {
     "frame_index": 400,
-    "timestamp_sec": 13.333,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.8176131844520569,
-        "x1": 0.9640449285507202,
-        "y1": 251.73580932617188,
-        "x2": 341.19696044921875,
-        "y2": 498.51422119140625,
-        "zone": "LEFT",
-        "area_fraction": 0.1347
-      }
-    ]
+    "timestamp_sec": 529.224,
+    "detections": []
   },
   {
     "frame_index": 401,
-    "timestamp_sec": 13.367,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.7191655039787292,
-        "x1": 0.8140910267829895,
-        "y1": 253.4298553466797,
-        "x2": 335.4710388183594,
-        "y2": 498.5418395996094,
-        "zone": "LEFT",
-        "area_fraction": 0.1316
-      }
-    ]
+    "timestamp_sec": 529.984,
+    "detections": []
   },
   {
     "frame_index": 402,
-    "timestamp_sec": 13.4,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.6096932888031006,
-        "x1": 0.8672210574150085,
-        "y1": 252.6201629638672,
-        "x2": 335.58819580078125,
-        "y2": 498.2954406738281,
-        "zone": "LEFT",
-        "area_fraction": 0.1319
-      }
-    ]
+    "timestamp_sec": 530.927,
+    "detections": []
   },
   {
     "frame_index": 403,
-    "timestamp_sec": 13.433,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.672379195690155,
-        "x1": 0.8974215388298035,
-        "y1": 252.43673706054688,
-        "x2": 334.8228759765625,
-        "y2": 498.62823486328125,
-        "zone": "LEFT",
-        "area_fraction": 0.1319
-      }
-    ]
+    "timestamp_sec": 532.087,
+    "detections": []
   },
   {
     "frame_index": 404,
-    "timestamp_sec": 13.467,
-    "detections": [
-      {
-        "class_name": "Tiger",
-        "confidence": 0.6007500290870667,
-        "x1": 0.933183491230011,
-        "y1": 252.35855102539062,
-        "x2": 333.9661865234375,
-        "y2": 498.6152038574219,
-        "zone": "LEFT",
-        "area_fraction": 0.1316
-      }
-    ]
+    "timestamp_sec": 532.856,
+    "detections": []
   },
   {
     "frame_index": 405,
-    "timestamp_sec": 13.5,
+    "timestamp_sec": 533.904,
     "detections": []
   },
   {
     "frame_index": 406,
-    "timestamp_sec": 13.533,
+    "timestamp_sec": 534.925,
     "detections": []
   },
   {
     "frame_index": 407,
-    "timestamp_sec": 13.567,
+    "timestamp_sec": 535.937,
     "detections": []
   },
   {
     "frame_index": 408,
-    "timestamp_sec": 13.6,
+    "timestamp_sec": 536.912,
     "detections": []
   },
   {
     "frame_index": 409,
-    "timestamp_sec": 13.633,
+    "timestamp_sec": 538.064,
     "detections": []
   },
   {
     "frame_index": 410,
-    "timestamp_sec": 13.667,
+    "timestamp_sec": 538.92,
     "detections": []
   },
   {
     "frame_index": 411,
-    "timestamp_sec": 13.7,
+    "timestamp_sec": 539.966,
     "detections": []
   },
   {
     "frame_index": 412,
-    "timestamp_sec": 13.733,
+    "timestamp_sec": 541.012,
     "detections": []
   },
   {
     "frame_index": 413,
-    "timestamp_sec": 13.767,
+    "timestamp_sec": 541.869,
     "detections": []
   },
   {
     "frame_index": 414,
-    "timestamp_sec": 13.8,
+    "timestamp_sec": 542.821,
     "detections": []
   },
   {
     "frame_index": 415,
-    "timestamp_sec": 13.833,
+    "timestamp_sec": 544.02,
     "detections": []
   },
   {
     "frame_index": 416,
-    "timestamp_sec": 13.867,
+    "timestamp_sec": 544.9,
     "detections": []
   },
   {
     "frame_index": 417,
-    "timestamp_sec": 13.9,
+    "timestamp_sec": 545.906,
     "detections": []
   },
   {
     "frame_index": 418,
-    "timestamp_sec": 13.933,
+    "timestamp_sec": 547.018,
     "detections": []
   },
   {
     "frame_index": 419,
-    "timestamp_sec": 13.967,
+    "timestamp_sec": 547.9,
     "detections": []
   },
   {
     "frame_index": 420,
-    "timestamp_sec": 14.0,
+    "timestamp_sec": 549.007,
     "detections": []
   },
   {
     "frame_index": 421,
-    "timestamp_sec": 14.033,
+    "timestamp_sec": 549.966,
     "detections": []
   },
   {
     "frame_index": 422,
-    "timestamp_sec": 14.067,
+    "timestamp_sec": 551.097,
     "detections": []
   },
   {
     "frame_index": 423,
-    "timestamp_sec": 14.1,
+    "timestamp_sec": 552.094,
     "detections": []
   },
   {
     "frame_index": 424,
-    "timestamp_sec": 14.133,
+    "timestamp_sec": 552.876,
+    "detections": []
+  },
+  {
+    "frame_index": 425,
+    "timestamp_sec": 554.005,
+    "detections": []
+  },
+  {
+    "frame_index": 426,
+    "timestamp_sec": 555.077,
+    "detections": []
+  },
+  {
+    "frame_index": 427,
+    "timestamp_sec": 555.87,
+    "detections": []
+  },
+  {
+    "frame_index": 428,
+    "timestamp_sec": 557.005,
+    "detections": []
+  },
+  {
+    "frame_index": 429,
+    "timestamp_sec": 557.983,
+    "detections": []
+  },
+  {
+    "frame_index": 430,
+    "timestamp_sec": 558.964,
+    "detections": []
+  },
+  {
+    "frame_index": 431,
+    "timestamp_sec": 559.894,
+    "detections": []
+  },
+  {
+    "frame_index": 432,
+    "timestamp_sec": 560.865,
+    "detections": []
+  },
+  {
+    "frame_index": 433,
+    "timestamp_sec": 562.003,
+    "detections": []
+  },
+  {
+    "frame_index": 434,
+    "timestamp_sec": 562.948,
+    "detections": []
+  },
+  {
+    "frame_index": 435,
+    "timestamp_sec": 563.981,
+    "detections": []
+  },
+  {
+    "frame_index": 436,
+    "timestamp_sec": 564.857,
+    "detections": []
+  },
+  {
+    "frame_index": 437,
+    "timestamp_sec": 566.032,
+    "detections": []
+  },
+  {
+    "frame_index": 438,
+    "timestamp_sec": 566.925,
+    "detections": []
+  },
+  {
+    "frame_index": 439,
+    "timestamp_sec": 567.864,
+    "detections": []
+  },
+  {
+    "frame_index": 440,
+    "timestamp_sec": 568.897,
+    "detections": []
+  },
+  {
+    "frame_index": 441,
+    "timestamp_sec": 569.929,
+    "detections": []
+  },
+  {
+    "frame_index": 442,
+    "timestamp_sec": 571.044,
+    "detections": []
+  },
+  {
+    "frame_index": 443,
+    "timestamp_sec": 571.945,
+    "detections": []
+  },
+  {
+    "frame_index": 444,
+    "timestamp_sec": 572.921,
+    "detections": []
+  },
+  {
+    "frame_index": 445,
+    "timestamp_sec": 574.115,
+    "detections": []
+  },
+  {
+    "frame_index": 446,
+    "timestamp_sec": 574.908,
+    "detections": []
+  },
+  {
+    "frame_index": 447,
+    "timestamp_sec": 575.929,
+    "detections": []
+  },
+  {
+    "frame_index": 448,
+    "timestamp_sec": 577.123,
+    "detections": []
+  },
+  {
+    "frame_index": 449,
+    "timestamp_sec": 577.891,
+    "detections": []
+  },
+  {
+    "frame_index": 450,
+    "timestamp_sec": 578.916,
+    "detections": []
+  },
+  {
+    "frame_index": 451,
+    "timestamp_sec": 579.895,
+    "detections": []
+  },
+  {
+    "frame_index": 452,
+    "timestamp_sec": 581.029,
+    "detections": []
+  },
+  {
+    "frame_index": 453,
+    "timestamp_sec": 581.836,
+    "detections": []
+  },
+  {
+    "frame_index": 454,
+    "timestamp_sec": 582.928,
+    "detections": []
+  },
+  {
+    "frame_index": 455,
+    "timestamp_sec": 583.899,
+    "detections": []
+  },
+  {
+    "frame_index": 456,
+    "timestamp_sec": 584.998,
+    "detections": []
+  },
+  {
+    "frame_index": 457,
+    "timestamp_sec": 586.096,
+    "detections": []
+  },
+  {
+    "frame_index": 458,
+    "timestamp_sec": 587.026,
+    "detections": []
+  },
+  {
+    "frame_index": 459,
+    "timestamp_sec": 587.989,
+    "detections": []
+  },
+  {
+    "frame_index": 460,
+    "timestamp_sec": 588.985,
+    "detections": []
+  },
+  {
+    "frame_index": 461,
+    "timestamp_sec": 590.117,
+    "detections": []
+  },
+  {
+    "frame_index": 462,
+    "timestamp_sec": 590.907,
+    "detections": []
+  },
+  {
+    "frame_index": 463,
+    "timestamp_sec": 591.861,
+    "detections": []
+  },
+  {
+    "frame_index": 464,
+    "timestamp_sec": 592.951,
+    "detections": []
+  },
+  {
+    "frame_index": 465,
+    "timestamp_sec": 594.049,
+    "detections": []
+  },
+  {
+    "frame_index": 466,
+    "timestamp_sec": 595.005,
+    "detections": []
+  },
+  {
+    "frame_index": 467,
+    "timestamp_sec": 595.986,
+    "detections": []
+  },
+  {
+    "frame_index": 468,
+    "timestamp_sec": 596.867,
+    "detections": []
+  },
+  {
+    "frame_index": 469,
+    "timestamp_sec": 597.925,
+    "detections": []
+  },
+  {
+    "frame_index": 470,
+    "timestamp_sec": 598.999,
+    "detections": []
+  },
+  {
+    "frame_index": 471,
+    "timestamp_sec": 599.941,
+    "detections": []
+  },
+  {
+    "frame_index": 472,
+    "timestamp_sec": 600.886,
+    "detections": []
+  },
+  {
+    "frame_index": 473,
+    "timestamp_sec": 601.985,
+    "detections": []
+  },
+  {
+    "frame_index": 474,
+    "timestamp_sec": 603.02,
+    "detections": []
+  },
+  {
+    "frame_index": 475,
+    "timestamp_sec": 604.074,
+    "detections": []
+  },
+  {
+    "frame_index": 476,
+    "timestamp_sec": 604.919,
+    "detections": []
+  },
+  {
+    "frame_index": 477,
+    "timestamp_sec": 605.883,
+    "detections": []
+  },
+  {
+    "frame_index": 478,
+    "timestamp_sec": 606.984,
+    "detections": []
+  },
+  {
+    "frame_index": 479,
+    "timestamp_sec": 607.961,
+    "detections": []
+  },
+  {
+    "frame_index": 480,
+    "timestamp_sec": 609.033,
+    "detections": []
+  },
+  {
+    "frame_index": 481,
+    "timestamp_sec": 609.751,
+    "detections": []
+  },
+  {
+    "frame_index": 482,
+    "timestamp_sec": 610.751,
+    "detections": []
+  },
+  {
+    "frame_index": 483,
+    "timestamp_sec": 611.662,
+    "detections": []
+  },
+  {
+    "frame_index": 484,
+    "timestamp_sec": 612.626,
+    "detections": []
+  },
+  {
+    "frame_index": 485,
+    "timestamp_sec": 614.211,
+    "detections": []
+  },
+  {
+    "frame_index": 486,
+    "timestamp_sec": 615.026,
+    "detections": []
+  },
+  {
+    "frame_index": 487,
+    "timestamp_sec": 615.986,
+    "detections": []
+  },
+  {
+    "frame_index": 488,
+    "timestamp_sec": 617.078,
+    "detections": []
+  },
+  {
+    "frame_index": 489,
+    "timestamp_sec": 617.921,
+    "detections": []
+  },
+  {
+    "frame_index": 490,
+    "timestamp_sec": 618.991,
+    "detections": []
+  },
+  {
+    "frame_index": 491,
+    "timestamp_sec": 620.13,
+    "detections": []
+  },
+  {
+    "frame_index": 492,
+    "timestamp_sec": 620.85,
+    "detections": []
+  },
+  {
+    "frame_index": 493,
+    "timestamp_sec": 622.012,
+    "detections": []
+  },
+  {
+    "frame_index": 494,
+    "timestamp_sec": 622.88,
+    "detections": []
+  },
+  {
+    "frame_index": 495,
+    "timestamp_sec": 623.934,
+    "detections": []
+  },
+  {
+    "frame_index": 496,
+    "timestamp_sec": 624.96,
+    "detections": []
+  },
+  {
+    "frame_index": 497,
+    "timestamp_sec": 625.898,
+    "detections": []
+  },
+  {
+    "frame_index": 498,
+    "timestamp_sec": 626.913,
+    "detections": []
+  },
+  {
+    "frame_index": 499,
+    "timestamp_sec": 628.025,
+    "detections": []
+  },
+  {
+    "frame_index": 500,
+    "timestamp_sec": 628.848,
+    "detections": []
+  },
+  {
+    "frame_index": 501,
+    "timestamp_sec": 630.153,
+    "detections": []
+  },
+  {
+    "frame_index": 502,
+    "timestamp_sec": 630.925,
+    "detections": []
+  },
+  {
+    "frame_index": 503,
+    "timestamp_sec": 631.895,
+    "detections": []
+  },
+  {
+    "frame_index": 504,
+    "timestamp_sec": 632.944,
+    "detections": []
+  },
+  {
+    "frame_index": 505,
+    "timestamp_sec": 633.957,
+    "detections": []
+  },
+  {
+    "frame_index": 506,
+    "timestamp_sec": 634.936,
+    "detections": []
+  },
+  {
+    "frame_index": 507,
+    "timestamp_sec": 635.931,
+    "detections": []
+  },
+  {
+    "frame_index": 508,
+    "timestamp_sec": 636.923,
+    "detections": []
+  },
+  {
+    "frame_index": 509,
+    "timestamp_sec": 637.898,
+    "detections": []
+  },
+  {
+    "frame_index": 510,
+    "timestamp_sec": 638.937,
+    "detections": []
+  },
+  {
+    "frame_index": 511,
+    "timestamp_sec": 640.146,
+    "detections": []
+  },
+  {
+    "frame_index": 512,
+    "timestamp_sec": 641.079,
+    "detections": []
+  },
+  {
+    "frame_index": 513,
+    "timestamp_sec": 641.903,
+    "detections": []
+  },
+  {
+    "frame_index": 514,
+    "timestamp_sec": 642.911,
+    "detections": []
+  },
+  {
+    "frame_index": 515,
+    "timestamp_sec": 644.146,
+    "detections": []
+  },
+  {
+    "frame_index": 516,
+    "timestamp_sec": 645.045,
+    "detections": []
+  },
+  {
+    "frame_index": 517,
+    "timestamp_sec": 646.056,
+    "detections": []
+  },
+  {
+    "frame_index": 518,
+    "timestamp_sec": 646.995,
+    "detections": []
+  },
+  {
+    "frame_index": 519,
+    "timestamp_sec": 648.026,
+    "detections": []
+  },
+  {
+    "frame_index": 520,
+    "timestamp_sec": 649.079,
+    "detections": []
+  },
+  {
+    "frame_index": 521,
+    "timestamp_sec": 650.038,
+    "detections": []
+  },
+  {
+    "frame_index": 522,
+    "timestamp_sec": 650.976,
+    "detections": []
+  },
+  {
+    "frame_index": 523,
+    "timestamp_sec": 651.959,
+    "detections": []
+  },
+  {
+    "frame_index": 524,
+    "timestamp_sec": 653.02,
+    "detections": []
+  },
+  {
+    "frame_index": 525,
+    "timestamp_sec": 653.94,
+    "detections": []
+  },
+  {
+    "frame_index": 526,
+    "timestamp_sec": 655.09,
+    "detections": []
+  },
+  {
+    "frame_index": 527,
+    "timestamp_sec": 655.896,
+    "detections": []
+  },
+  {
+    "frame_index": 528,
+    "timestamp_sec": 656.86,
+    "detections": []
+  },
+  {
+    "frame_index": 529,
+    "timestamp_sec": 658.154,
+    "detections": []
+  },
+  {
+    "frame_index": 530,
+    "timestamp_sec": 659.06,
+    "detections": []
+  },
+  {
+    "frame_index": 531,
+    "timestamp_sec": 659.892,
+    "detections": []
+  },
+  {
+    "frame_index": 532,
+    "timestamp_sec": 660.952,
+    "detections": []
+  },
+  {
+    "frame_index": 533,
+    "timestamp_sec": 661.987,
+    "detections": []
+  },
+  {
+    "frame_index": 534,
+    "timestamp_sec": 663.042,
+    "detections": []
+  },
+  {
+    "frame_index": 535,
+    "timestamp_sec": 664.173,
+    "detections": []
+  },
+  {
+    "frame_index": 536,
+    "timestamp_sec": 665.078,
+    "detections": []
+  },
+  {
+    "frame_index": 537,
+    "timestamp_sec": 665.886,
+    "detections": []
+  },
+  {
+    "frame_index": 538,
+    "timestamp_sec": 667.016,
+    "detections": []
+  },
+  {
+    "frame_index": 539,
+    "timestamp_sec": 668.107,
+    "detections": []
+  },
+  {
+    "frame_index": 540,
+    "timestamp_sec": 668.934,
+    "detections": []
+  },
+  {
+    "frame_index": 541,
+    "timestamp_sec": 669.953,
+    "detections": []
+  },
+  {
+    "frame_index": 542,
+    "timestamp_sec": 671.004,
+    "detections": []
+  },
+  {
+    "frame_index": 543,
+    "timestamp_sec": 672.111,
+    "detections": []
+  },
+  {
+    "frame_index": 544,
+    "timestamp_sec": 672.966,
+    "detections": []
+  },
+  {
+    "frame_index": 545,
+    "timestamp_sec": 674.369,
+    "detections": []
+  },
+  {
+    "frame_index": 546,
+    "timestamp_sec": 675.189,
+    "detections": []
+  },
+  {
+    "frame_index": 547,
+    "timestamp_sec": 676.182,
+    "detections": []
+  },
+  {
+    "frame_index": 548,
+    "timestamp_sec": 676.964,
+    "detections": []
+  },
+  {
+    "frame_index": 549,
+    "timestamp_sec": 678.216,
+    "detections": []
+  },
+  {
+    "frame_index": 550,
+    "timestamp_sec": 678.933,
+    "detections": []
+  },
+  {
+    "frame_index": 551,
+    "timestamp_sec": 680.055,
+    "detections": []
+  },
+  {
+    "frame_index": 552,
+    "timestamp_sec": 681.054,
+    "detections": []
+  },
+  {
+    "frame_index": 553,
+    "timestamp_sec": 682.206,
+    "detections": []
+  },
+  {
+    "frame_index": 554,
+    "timestamp_sec": 682.915,
+    "detections": []
+  },
+  {
+    "frame_index": 555,
+    "timestamp_sec": 684.137,
+    "detections": []
+  },
+  {
+    "frame_index": 556,
+    "timestamp_sec": 685.14,
+    "detections": []
+  },
+  {
+    "frame_index": 557,
+    "timestamp_sec": 686.037,
+    "detections": []
+  },
+  {
+    "frame_index": 558,
+    "timestamp_sec": 687.267,
+    "detections": []
+  },
+  {
+    "frame_index": 559,
+    "timestamp_sec": 688.067,
     "detections": []
   }
 ]

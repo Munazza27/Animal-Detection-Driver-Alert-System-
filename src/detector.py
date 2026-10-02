@@ -16,7 +16,7 @@ Output format per detection (a plain dict, easy to serialize to JSON):
 }
 """
 
-from ultralytics import YOLO
+from ultralytics import YOLO #type:ignore
 import numpy as np
 
 from src.config import (
